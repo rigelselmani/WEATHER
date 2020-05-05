@@ -36,8 +36,16 @@ header{
     height:300px;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
-    padding:10px;
+    padding:15px;
     margin-top: 40px;
     background-color: aliceblue;
     margin-top:0
+}
+.temp{
+    float: left;
+    padding:50px 40px 30px 20px;
+}
+.state{
+    margin-left: 80%;
+    padding:50px 40px 30px 20px;
 }
