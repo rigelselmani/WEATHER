@@ -13,6 +13,13 @@ header{
     padding: 0;
     padding:10px;
 }
+input{
+    border:none;
+    background-color: white;
+    padding:15px;
+    letter-spacing: 2px;
+    text-align: center;
+}
 .container1{
     background-image: url(images/maxresdefault.jpg);
     background-repeat: no-repeat;
@@ -25,7 +32,6 @@ header{
     background-image: image();
     border-top-right-radius: 25px;
     border-top-left-radius: 25px;
-    padding:10px;
     margin-top: 40px;
     background-color: aliceblue;
 }
@@ -36,16 +42,7 @@ header{
     height:300px;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
-    padding:15px;
     margin-top: 40px;
     background-color: aliceblue;
-    margin-top:0
-}
-.temp{
-    float: left;
-    padding:50px 40px 30px 20px;
-}
-.state{
-    margin-left: 80%;
-    padding:50px 40px 30px 20px;
+    margin-top:0;
 }
