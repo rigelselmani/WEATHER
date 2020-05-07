@@ -1,9 +1,9 @@
 body{
     padding:0;
     margin:0;
-    background: #e96443;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #904e95, #e96443);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #904e95, #e96443); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #8A2387;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #F27121, #E94057, #8A2387);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #F27121, #E94057, #8A2387); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     font-family: 'Montserrat', sans-serif;
 }
 header{
@@ -72,7 +72,6 @@ input{
     height:300px;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
-    margin-top: 40px;
     background-color: aliceblue;
-    margin-top:0;
+    padding-top:0;
 }
