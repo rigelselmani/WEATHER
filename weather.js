@@ -1,6 +1,7 @@
 $(document).ready(function(){
 
 function addLocation(){
+    getDate()
     if(navigator.geolocation){
              console.log("geolocation aviable")
              navigator.geolocation.getCurrentPosition(position =>{
@@ -51,6 +52,4 @@ function getDate(){
 
 addLocation()
 // fiveDaysWeather()
-getDate()
-
 })
