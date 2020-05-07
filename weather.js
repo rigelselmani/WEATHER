@@ -26,7 +26,7 @@ function addLocation(){
 }
 
 // function fiveDaysWeather(){
-//     var queryURL="http://api.openweathermap.org/data/2.5/forecast?lat=39.0344729&lon=-77.52617599999999&appid=0ab9af27ca97b79fdc2b37ec61800370&units=imperial";
+//     var queryURL="https://api.openweathermap.org/data/2.5/forecast?lat=39.0344729&lon=-77.52617599999999&appid=0ab9af27ca97b79fdc2b37ec61800370&units=imperial";
 
 //     $.ajax({
 //         url:queryURL,
@@ -35,8 +35,7 @@ function addLocation(){
        
 //     })
 // }
-addLocation()
-fiveDaysWeather()
+
 
 function getDate(){
 
@@ -50,6 +49,8 @@ function getDate(){
     $("#date").text(today.toLocaleDateString("en-US", options));
     }
 
+addLocation()
+// fiveDaysWeather()
 getDate()
 
 })
