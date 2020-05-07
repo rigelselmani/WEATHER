@@ -14,7 +14,6 @@ function addLocation(){
                url:queryURL,
                method:"GET"
             }).then(function(response){
-               console.log(response)
               $(".state").text(response.name)
               $(".temp").text(Math.floor(response.main.temp)+" °")
               $(".wind").text("Wind: "+Math.floor(response.wind.speed)+" MPH")
