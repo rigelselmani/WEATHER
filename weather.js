@@ -8,7 +8,7 @@ function addLocation(){
                  console.log(latit)
                  var longi=position.coords.longitude;
                  console.log(longi)
-               var queryURL="http://api.openweathermap.org/data/2.5/weather?lat="+latit+"&lon="+longi+"&appid=0ab9af27ca97b79fdc2b37ec61800370&units=imperial"
+               var queryURL="https://api.openweathermap.org/data/2.5/weather?lat="+latit+"&lon="+longi+"&appid=0ab9af27ca97b79fdc2b37ec61800370&units=imperial"
         
             $.ajax({
                url:queryURL,
@@ -25,16 +25,16 @@ function addLocation(){
     }
 }
 
-function fiveDaysWeather(){
-    var queryURL="http://api.openweathermap.org/data/2.5/forecast?lat=39.0344729&lon=-77.52617599999999&appid=0ab9af27ca97b79fdc2b37ec61800370&units=imperial";
+// function fiveDaysWeather(){
+//     var queryURL="http://api.openweathermap.org/data/2.5/forecast?lat=39.0344729&lon=-77.52617599999999&appid=0ab9af27ca97b79fdc2b37ec61800370&units=imperial";
 
-    $.ajax({
-        url:queryURL,
-        method:"GET"
-    }).then(function(response){
-        console.log(response)
-    })
-}
+//     $.ajax({
+//         url:queryURL,
+//         method:"GET"
+//     }).then(function(response){
+       
+//     })
+// }
 addLocation()
 fiveDaysWeather()
 
