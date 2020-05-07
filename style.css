@@ -4,7 +4,7 @@ body{
     background: #e96443;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom, #904e95, #e96443);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to bottom, #904e95, #e96443); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    font-family: 'Montserrat', sans-serif;
 }
 header{
     background-color: #2b244d;
@@ -22,10 +22,11 @@ input{
 }
 .container1{
     background-image: url(images/maxresdefault.jpg);
-    background-repeat: no-repeat;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-size: auto;
     background-position: center;
-    width:1000px;
+    width:60%;
     margin: auto;
     color:white;
     height:300px;
@@ -35,8 +36,37 @@ input{
     margin-top: 40px;
     background-color: aliceblue;
 }
+.temp{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 90px;
+    float: left;
+    margin: 70px 10px 10px 120px;
+}
+.state{
+    float:right;
+    margin: 80px 100px 10px 10px;
+    font-family: 'Montserrat', sans-serif;  
+    border-bottom:3px solid white;
+}
+#lower{
+    padding: 200px 50px 0px 390px;
+    float: inline-end;
+    color:rgb(253, 253, 253);
+}
+.humidity{
+    float: left;
+    border-right: 2px solid rgb(192, 188, 202);
+    padding-right:25px;
+    font-family: 'Montserrat', sans-serif;  
+    font-size: 20px;
+}
+.wind{
+    font-family: 'Montserrat', sans-serif;  
+    font-size: 20px;
+    padding-left: 200px;
+}
 .container2{
-    width:1000px;
+    width:60%;
     margin: auto;
     color:rgb(55, 95, 228);
     height:300px;
