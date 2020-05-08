@@ -1,40 +1,48 @@
 body{
     padding:0;
     margin:0;
-    background: #8A2387;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #F27121, #E94057, #8A2387);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #F27121, #E94057, #8A2387); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    font-family: 'Montserrat', sans-serif;
+    background: #1D2671;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #C33764, #1D2671);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #C33764, #1D2671); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
 }
 header{
+    position: relative;
     background-color: #2b244d;
     color:white;
-    text-align: center;
     padding: 0;
-    padding:10px;
+    padding:1px;
+}
+.firstH1{
+   margin-left:40%;
 }
 input{
     border:none;
-    background-color: white;
+    margin:20px 0 0 80px;
+    background-color: rgba(238, 232, 232, 0.712);
     padding:15px;
     letter-spacing: 2px;
     text-align: center;
+    float: left;
+    border-radius: 15px;
+    color:white;
+    width:0;
+    transition:0.2s linear;
+    opacity:0;
+}
+input:hover{
+    width: auto;
+    transition: 3s;
 }
 .container1{
-    background-image: url(images/maxresdefault.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: center;
+    background-color: #C33764;
     width:60%;
     margin: auto;
     color:white;
-    height:300px;
-    background-image: image();
-    border-top-right-radius: 25px;
-    border-top-left-radius: 25px;
-    margin-top: 40px;
-    background-color: aliceblue;
+    border-radius: 25px;
+    margin-top: 50px;
 }
 .temp{
     font-family: 'Montserrat', sans-serif;
@@ -66,12 +74,25 @@ input{
     padding-left: 200px;
 }
 .container2{
-    width:60%;
+    width:100%;
     margin: auto;
     color:rgb(55, 95, 228);
-    height:300px;
+    height:250px;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
     background-color: aliceblue;
     padding-top:0;
+    padding-bottom: 0;
+}
+.lTemperature{
+    width:5%;
+    height: 230px;
+    padding:5px;
+    background-color: rgb(172, 165, 171);
+}
+.hTemperature{
+    width:7%;
+    height: 230px;
+    padding:5px;
+    background-color: rgb(172, 165, 171);
 }
