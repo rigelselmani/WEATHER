@@ -33,6 +33,17 @@ $(document).ready(function(){
     }
 }
 
+$("input[type='text']").keypress(function(event){
+    if(event.which===13){
+        var text=$(this).val().trim();
+        $("input").val("")
+        var queryURL="http://api.openweathermap.org/data/2.5/weather?q="+text+"&appid=0ab9af27ca97b79fdc2b37ec61800370&units=imperial"
+        console.log(queryURL)
+    }else{
+        console.log("Clicked the wrong key")
+    }
+})
+
 function getDate(){
 
     let options = {
