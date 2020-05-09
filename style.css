@@ -40,11 +40,19 @@ input{
 
 .container1{
     background-color: #C33764;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     width:60%;
     margin: auto;
     color:white;
     border-radius: 25px;
     margin-top: 50px;
+    box-shadow: 6px 5px 7px rgb(0,0,0, 0.1);
+}
+.tempType{
+    position: absolute;
+    margin-top:213px;
+    margin-left:950px;
 }
 .temp{
     font-family: 'Montserrat', sans-serif;
@@ -74,6 +82,13 @@ input{
     font-family: 'Montserrat', sans-serif;  
     font-size: 20px;
     padding-left: 200px;
+}
+.cloudy{
+    position:absolute;
+    font-family: 'Montserrat', sans-serif;
+    margin-top:180px;
+    margin-left:139px;
+
 }
 .container2{
     width:100%;

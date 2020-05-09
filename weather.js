@@ -19,6 +19,7 @@ $(document).ready(function(){
               $(".temp").text(Math.floor(response.main.temp)+" °")
               $(".wind").text("Wind: "+Math.floor(response.wind.speed)+" MPH")
               $(".humidity").text("Humidity: "+response.main.humidity+" %")
+              $(".cloudy").text(response.weather[0].main)
               if(response.weather[0].main=="Rain"){
                 $('.container1').css('background-image', 'url(https://wallpapercave.com/wp/9EjbNTw.jpg)');              
             }else if(response.weather[0].main=="Clouds"){
@@ -38,10 +39,27 @@ $("input[type='text']").keypress(function(event){
         var text=$(this).val().trim();
         $("input").val("")
         var queryURL="http://api.openweathermap.org/data/2.5/weather?q="+text+"&appid=0ab9af27ca97b79fdc2b37ec61800370&units=imperial"
-        console.log(queryURL)
+        $.ajax({
+            url:queryURL,
+            method:"GET"
+        }).then(function(response){
+          $(".temp").text(Math.floor(response.main.temp)+" °");
+          $(".state").text(response.name);
+          $(".humidity").text("Humidity: "+Math.floor(response.main.humidity)+" %");
+          $(".wind").text("Wind Speed: "+Math.floor(response.wind.speed));
+          $(".cloudy").text(response.weather[0].main)
+          if(response.weather[0].main=="Rain"){
+            $('.container1').css('background-image', 'url(https://wallpapercave.com/wp/9EjbNTw.jpg)');              
+        }else if(response.weather[0].main=="Clouds"){
+            $('.container1').css('background-image', 'url(https://www.farmersalmanac.com/wp-content/uploads/2011/09/Clouds-Predict-Local-Weather-i861387936.jpg)');              
+        }else if(response.weather[0].main=="Clear"){
+            $('.container1').css('background-image', 'url(https://get.pxhere.com/photo/cloud-sky-white-weather-cumulus-blue-toy-sunny-clouds-clouded-sky-clouds-form-sunny-day-cumulus-clouds-cumulus-cloud-summer-day-meteorological-phenomenon-atmosphere-of-earth-1287206.jpg)');              
+        }
+        })
     }else{
-        console.log("Clicked the wrong key")
+    
     }
+
 })
 
 function getDate(){
