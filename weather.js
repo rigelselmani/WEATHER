@@ -63,16 +63,25 @@ $("input[type='text']").keypress(function(event){
           $(".wind").text("Wind Speed: "+Math.floor(response.wind.speed));
           $(".cloudy").text(response.weather[0].main)
 
+          let celcius=(response.main.temp -32) *(5/9);
+          $(".c").on("click",function(){
+            $(".temp").text(Math.floor(celcius)+" °")
+          })
+          console.log(Math.floor(celcius))
+          $(".f").on("click",function(){
+              $(".temp").text(Math.floor(response.main.temp)+" °")
+          })
+
         //   var time=response.sys.sunrise
         //   var date = new Date(time * 1000);
         //   var timeStr = date.toLocaleTimeString();
         
 
-          if(response.weather[0].main=="Rain"){
+          if(response.weather[0].main==="Rain"){
             $('.container1').css('background-image', 'url(https://cdn.vox-cdn.com/thumbor/LF-o7juzy4AMUa2p6i8qWaFw4xU=/0x0:2048x1156/1200x800/filters:focal(299x94:625x420)/cdn.vox-cdn.com/uploads/chorus_image/image/49587899/15746767658_8338d05a3e_k.0.jpg)');              
-        }else if(response.weather[0].main=="Clouds"){
+        }else if(response.weather[0].main==="Clouds"){
             $('.container1').css('background-image', 'url(https://www.farmersalmanac.com/wp-content/uploads/2011/09/Clouds-Predict-Local-Weather-i861387936.jpg)');              
-        }else if(response.weather[0].main=="Clear"){
+        }else if(response.weather[0].main==="Clear"){
             $('.container1').css('background-image', 'url(https://get.pxhere.com/photo/cloud-sky-white-weather-cumulus-blue-toy-sunny-clouds-clouded-sky-clouds-form-sunny-day-cumulus-clouds-cumulus-cloud-summer-day-meteorological-phenomenon-atmosphere-of-earth-1287206.jpg)');              
         }
         })
