@@ -78,7 +78,7 @@ $("input[type='text']").keypress(function(event){
         
 
           if(response.weather[0].main==="Rain"){
-            $('.container1').css('background-image', 'url(https://cdn.vox-cdn.com/thumbor/LF-o7juzy4AMUa2p6i8qWaFw4xU=/0x0:2048x1156/1200x800/filters:focal(299x94:625x420)/cdn.vox-cdn.com/uploads/chorus_image/image/49587899/15746767658_8338d05a3e_k.0.jpg)');              
+            $('.container1').css('background-image', 'url(http://1.bp.blogspot.com/-zLSkuSN9qBY/TiYKIIAl0eI/AAAAAAAAAOg/XKb3fo6LOhs/s1600/paris-rain-1920x1200.jpg)');              
         }else if(response.weather[0].main==="Clouds"){
             $('.container1').css('background-image', 'url(https://www.farmersalmanac.com/wp-content/uploads/2011/09/Clouds-Predict-Local-Weather-i861387936.jpg)');              
         }else if(response.weather[0].main==="Clear"){
