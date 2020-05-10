@@ -51,7 +51,7 @@ $("input[type='text']").keypress(function(event){
         var text=$(this).val().trim();
         $("input").val("")
 
-        var queryURL="http://api.openweathermap.org/data/2.5/weather?q="+text+"&appid=0ab9af27ca97b79fdc2b37ec61800370&units=imperial"
+        var queryURL="https://api.openweathermap.org/data/2.5/weather?q="+text+"&appid=0ab9af27ca97b79fdc2b37ec61800370&units=imperial"
         $.ajax({
             url:queryURL,
             method:"GET"
