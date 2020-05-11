@@ -4,8 +4,8 @@
 
 * Languages used: HTML, CSS, javascript (jquery)
 
-* Access current weather data for any location on Earth including over 200,000 cities
+* The app will access your location and display the weather of the city you are in.
 
-* 
+* You can search by city name in the input ,the app responds with a result that match a searching word.
 
-*You can call by city name or city name,API responds with a list of results that match a searching word.
+#https://rigelselmani.github.io/WEATHER/
