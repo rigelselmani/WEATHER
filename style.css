@@ -16,7 +16,7 @@ header{
     padding:1px;
 }
 .firstH1{
-   margin-left:63%;
+   margin-left:62%;
 }
 input{
     border:none;
@@ -33,6 +33,7 @@ input{
 }
 
 .container{
+    position: relative;
     background-color: #C33764;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -46,7 +47,7 @@ input{
 }
 .tempType{
     position: absolute;
-    margin-top:213px;
+    margin-top:333px;
     margin-left:950px;
 }
 .temp{
@@ -62,33 +63,28 @@ input{
     border-bottom:3px solid white;
 }
 .humidity{
-    padding:380px 0px 0px 150px;
+    width:160px;
+    float: left;
+    padding:10px;
     font-family: 'Montserrat', sans-serif;  
     font-size: 20px;
     border-right:1px solid white ;
 }
 .wind{
     position: absolute;
-    padding:0px 20px 200px 350px ;
+    margin-left:195px;
+    padding:10px;
+    position: absolute;
     font-family: 'Montserrat', sans-serif;  
     font-size: 20px;
 }
-.cloudy{
+.hum-wind{
+    padding:310px 20px 20px 100px;
+}
+.sky{
     position:absolute;
     font-family: 'Montserrat', sans-serif;
     margin-top:180px;
     margin-left:139px;
 
-}
-.lTemperature{
-    width:5%;
-    height: 230px;
-    padding:5px;
-    background-color: rgb(172, 165, 171);
-}
-.hTemperature{
-    width:7%;
-    height: 230px;
-    padding:5px;
-    background-color: rgb(172, 165, 171);
 }

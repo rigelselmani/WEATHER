@@ -49,7 +49,7 @@ $("input[type='text']").keypress(function(event){
         $(".state").text(response.name);
         $(".wind").text("Wind: "+Math.floor(response.wind.speed)+" MPH")
         $(".humidity").text("Humidity: "+response.main.humidity+" %")
-        $(".cloudy").text(response.weather[0].main)
+        $(".sky").text(response.weather[0].main)
     }
     
     function imageDisplay(response){
