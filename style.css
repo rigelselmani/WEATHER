@@ -46,8 +46,7 @@ input{
 }
 .tempType{
     position: absolute;
-    margin-top:333px;
-    margin-left:950px;
+    margin:290px 0 0 950px;
 }
 .temp{
     font-family: 'Montserrat', sans-serif;
@@ -78,7 +77,7 @@ input{
     font-size: 20px;
 }
 .hum-wind{
-    padding:310px 20px 20px 100px;
+    padding:277px 20px 20px 100px;
 }
 .sky{
     position:absolute;
@@ -87,52 +86,72 @@ input{
     margin-left:139px;
 
 }
+@media(max-width:768px){
+    input{
+        margin-left: 8%;
+    }
+    .firstH1{
+        margin: 0 0 0 38%;
+        padding:20px;
+    }
+    .container{
+        width:85%;
+       text-align: center;
+    }
+    .tempType{
+        padding:0;
+        margin:180px 0 0 450px;
+    }
+    .hum-wind{
+        padding:297px 20px 20px 150px;
+    }
+}
 
 @media (max-width:320px){
-   header{
-     text-align: center;
-     height:70px;
-     width:100%;
-  }
-  input{
-      margin:14px 30px 14px 60px;
-      position:relative;
-  }
-  .firstH1{
-      position: relative;
-      margin: 90px 50px 50px 50px;
-  }
-  .container{
-      width:80%;
-      margin: 120px 33px 13px 33px;
-      height:470px;
-  }
-  .state{
-    position:absolute;
-    margin:15px 38px;
-  }
-  .sky{
-      margin:75px 10px 10px 92px;
-  }
-  .temp{
-      margin:115px 10px 10px 80px;
-      font-size: 66px;
-  }
-  .hum-wind{
-      margin:0;
-      padding:0;
-  }
-  .wind{
-      border-bottom: 2px solid rgb(230, 227, 227);
-      margin:250px 10px 30px 69px;
-      padding:0;
-  }
-  .humidity{
-    border: none;
-    margin:70px;
-    padding:0;
-  }
-  .tempType{
-      margin: 380px 10px 10px 110px;
-  }
+    header{
+      text-align: center;
+      height:70px;
+      width:100%;
+   }
+   input{
+       margin:14px 30px 14px 60px;
+       position:relative;
+   }
+   .firstH1{
+       position: relative;
+       margin: 0px 50px 50px 50px;
+   }
+   .container{
+       width:80%;
+       margin: 120px 33px 13px 33px;
+       height:470px;
+   }
+   .state{
+     position:absolute;
+     margin:15px 38px;
+   }
+   .sky{
+       margin:75px 10px 10px 92px;
+   }
+   .temp{
+       margin:115px 10px 10px 80px;
+       font-size: 66px;
+   }
+   .hum-wind{
+       margin:0;
+       padding:0;
+   }
+   .wind{
+       border-bottom: 2px solid rgb(230, 227, 227);
+       margin:250px 10px 30px 69px;
+       padding:0;
+   }
+   .humidity{
+     border: none;
+     margin:70px;
+     padding:0;
+   }
+   .tempType{
+       margin: 380px 10px 10px 110px;
+   }
 }
