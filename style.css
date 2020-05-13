@@ -16,7 +16,7 @@ header{
     padding:1px;
 }
 .firstH1{
-   margin-left:62%;
+   margin-left:59%;
 }
 input{
     border:none;
@@ -28,7 +28,6 @@ input{
     float: left;
     border-radius: 15px;
     color:white;
-    transition:0.2s linear;
     margin-left:390px;
 }
 
@@ -89,22 +88,51 @@ input{
 
 }
 
-@media (max-width: 768px){
-    input{
-        width:22%;
-        padding:18px;
-        margin:15px 0 15px 100px;
-    }
-    .firstH1{
-        float:right;
-    }
-    header{
-        width:100%;
-    }
-    .container{
-        width:70%;
-    }
-    .tempType{
-        margin:0;
-    }
+@media (max-width:320px){
+   header{
+     text-align: center;
+     height:70px;
+     width:100%;
+  }
+  input{
+      margin:14px 30px 14px 60px;
+      position:relative;
+  }
+  .firstH1{
+      position: relative;
+      margin: 90px 50px 50px 50px;
+  }
+  .container{
+      width:80%;
+      margin: 120px 33px 13px 33px;
+      height:470px;
+  }
+  .state{
+    position:absolute;
+    margin:15px 38px;
+  }
+  .sky{
+      margin:75px 10px 10px 92px;
+  }
+  .temp{
+      margin:115px 10px 10px 80px;
+      font-size: 66px;
+  }
+  .hum-wind{
+      margin:0;
+      padding:0;
+  }
+  .wind{
+      border-bottom: 2px solid rgb(230, 227, 227);
+      margin:250px 10px 30px 69px;
+      padding:0;
+  }
+  .humidity{
+    border: none;
+    margin:70px;
+    padding:0;
+  }
+  .tempType{
+      margin: 380px 10px 10px 110px;
+  }
 }
