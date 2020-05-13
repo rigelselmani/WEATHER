@@ -88,3 +88,23 @@ input{
     margin-left:139px;
 
 }
+
+@media (max-width: 768px){
+    input{
+        width:22%;
+        padding:18px;
+        margin:15px 0 15px 100px;
+    }
+    .firstH1{
+        float:right;
+    }
+    header{
+        width:100%;
+    }
+    .container{
+        width:70%;
+    }
+    .tempType{
+        margin:0;
+    }
+}
