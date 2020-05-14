@@ -86,9 +86,23 @@ input{
     margin-left:139px;
 
 }
+@media (max-width:1240px){
+    input{
+        margin-left:20%;
+    }
+    .firstH1{
+        margin: 20px 10px 20px 430px;
+    }
+    .tempType{
+        margin:185px 0 0 400px;
+    }
+    .hum-wind{
+        padding:330px 0 0 140px;
+    }
+}
 @media(max-width:768px){
     input{
-        margin-left: 8%;
+       margin-left:8%;
     }
     .firstH1{
         margin: 0 0 0 38%;
@@ -106,6 +120,48 @@ input{
         padding:297px 20px 20px 150px;
     }
 }
+@media (max-width:425px){
+    header{
+        text-align: center;
+        height: 100px;
+    }
+    input{
+      padding:20px;
+      margin:20px 60px 20px 100px;
+    }
+    .firstH1{
+    margin:85px 10px 10px 10px;   
+    }
+    .container{
+        margin:80px 10px 30px 32px ;
+    }
+    .state{
+        margin:20px 80px 10px 10px;
+    }
+    .hum-wind{
+        padding-left:100px;
+    }
+    .humidity{
+        border: none;
+        float: none;
+        margin-bottom:0px;
+        border-bottom:2px solid grey;
+    }
+    .wind{
+        padding-top:0px;
+        margin-top:0px;
+        margin:10px 10px;
+    }
+    .temp{
+        margin-top:20px;
+    }
+    .sky{
+        margin:130px 30px 10px 155px;
+    } 
+    .tempType{
+        margin:240px 0 0 170px;
+    }
+}     
 
 @media (max-width:320px){
     header{
@@ -143,12 +199,13 @@ input{
    }
    .wind{
        border-bottom: 2px solid rgb(230, 227, 227);
-       margin:250px 10px 30px 69px;
+       margin:0px 10px 30px 69px;
        padding:0;
+       border:none;
    }
    .humidity{
      border: none;
-     margin:70px;
+     margin:60px;
      padding:0;
    }
    .tempType{
