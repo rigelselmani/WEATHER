@@ -8,4 +8,4 @@
 
 * You can search by city name in the input ,the app responds with a result that match a searching word.
 
-#  https://rigelselmani.github.io/WEATHER/
+ https://rigelselmani.github.io/WEATHER/
