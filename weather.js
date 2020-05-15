@@ -54,9 +54,10 @@ $("input[type='text']").keypress(function(event){
     
     function imageDisplay(response){
         if(response.weather[0].main=="Rain"){
-            $('.container').css('background-image', 'url(https://cdn.abcotvs.com/dip/images/5184599_031119-kgo-shutterstock-rain-img.jpg?w=1600)');              
+            $('.container').css('background-image', 'url(http://www.nosmokeandmirrors.com/wp-content/uploads/2016/12/drops-1436231_1280.jpg)');              
         }else if(response.weather[0].main=="Clouds"){
             $('.container').css('background-image', 'url(https://www.farmersalmanac.com/wp-content/uploads/2011/09/Clouds-Predict-Local-Weather-i861387936.jpg)');              
+            $(".hum-wind").css("color","black")
         }else if(response.weather[0].main=="Clear"){
             $('.container').css('background-image', 'url(https://theliberal.ie/wp-content/uploads/2016/08/sunnyspelll.jpg)');              
         }
