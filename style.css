@@ -28,7 +28,13 @@ input{
     float: left;
     border-radius: 15px;
     color:white;
-    margin-left:390px;
+    margin-left:390px; 
+}
+.input:focus{
+   border:none;   
+}
+::placeholder{
+    color:white; 
 }
 
 .container{
