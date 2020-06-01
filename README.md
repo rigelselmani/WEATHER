@@ -8,7 +8,7 @@
 
 * You can search by city name in the input ,the app responds with a result that match a searching word.
 
-* Displays the temp,click C display in C and click F to display temp in F,+humidity and win-speed.
+* Displays the temp,click C display in Celcius and click F to display temp in Fehrenheit,displays humidity and win-speed as well.
 
 
 
