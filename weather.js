@@ -94,7 +94,7 @@ $("input[type='text']").keypress(function(event){
         }else if(response.weather[0].main=="Clouds"){
             $('.container1').css('background-image', 'url(https://eoimages.gsfc.nasa.gov/images/imagerecords/84000/84662/rover__pho_7268_lrg.jpg)');              
         }else if(response.weather[0].main=="Clear"){
-            $('.container1').css('background-image', 'url(https://theliberal.ie/wp-content/uploads/2016/08/sunnyspelll.jpg)');              
+            $('.container1').css('background-image', 'url(https://bloximages.chicago2.vip.townnews.com/valdostadailytimes.com/content/tncms/assets/v3/editorial/8/ec/8ec8ad4f-a97f-5686-9b3d-91c2e79ca90e/5ad4263c86d82.image.jpg?resize=400%2C199)');              
         }
     }
 
