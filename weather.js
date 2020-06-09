@@ -81,7 +81,7 @@ $("input[type='text']").keypress(function(event){
     // end of daily logic for next 5 days
     function apiResponse(response){
         $(".temp").text(Math.floor(response.main.temp)+" °")
-        $(".state").text(response.name);
+        $(".city").text(response.name);
         $(".wind").text("Wind: "+Math.floor(response.wind.speed)+" MPH")
         $(".humidity").text("Humidity: "+response.main.humidity+" %")
         $(".sky").text(response.weather[0].main)

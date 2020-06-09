@@ -57,7 +57,7 @@ input{
     font-family: 'Montserrat', sans-serif;
     font-size: 90px;
 }
-.state{
+.city{
     position: absolute;
     right:12%;
     top:18%;
@@ -132,142 +132,134 @@ input{
 }
 @media (max-width:1440px){
     header{
-        height:80px;
+        height:85px;
+        position:relative;
     }
     .firstH1{
         display: inline-block;
-        position:absolute;
-        right:3%;
+        position: absolute;
+        left:50%;
     }
     input{
         display: inline-block;
         position: absolute;
         left:21%;
-        top:2%;
+        top:14px;
+    }
+    .hum-wind{
+        position: absolute;
+        left:20%;
     }
 }
 @media (max-width:1024px){
     input{
-        
+        font-size: 20px;
+        left:36%;
     }
     .firstH1{
-      position: absolute;
-      left:46%;
+      position: relative;
+      left:35%;
+      top:80%;
+      font-size: 29px;
+    }
+    .city{
+        position:absolute;
+        left:60%;
+        font-size: 29px;
+        border-bottom:3px solid white;
     }
     .hum-wind{
-       position: absolute;
-       left:18%;
+     position: absolute;
+     left:20%;
+    }
+    .humidity{
+        font-size: 22px;
+    }
+    .wind{
+        font-size: 22px;
     }
 }
 @media(max-width:768px){
     input{
-       margin-left:8%;
+      left:32%;
     }
     .firstH1{
-        margin: 0 0 0 38%;
-        padding:20px;
+        left:30.5%;
     }
     .container{
-        width:85%;
+       width:85%;
        text-align: center;
     }
-    .tempType{
-        padding:0;
-        margin:180px 0 0 450px;
-    }
-    .hum-wind{
-        padding:297px 20px 20px 150px;
+    .city{
+        position: absolute;
+        right:4%;
     }
 }
 @media (max-width:425px){
     header{
         text-align: center;
-        height: 100px;
+        height: 73px;
     }
     input{
-      padding:20px;
-      margin:20px 60px 20px 100px;
+     position: absolute;
+     left:18%;
+     padding: 10px;
     }
-    .firstH1{
-    margin:85px 10px 10px 10px;   
+    .firstH1{  
+        position: absolute; 
+        left:15%;
     }
-    .container{
-        margin:80px 10px 30px 32px ;
+    .container1{
+        width:88%;
     }
-    .state{
-        margin:20px 80px 10px 10px;
+    .city{
+        position: absolute;
+        left:49%;
+        top:20%;
     }
     .hum-wind{
-        padding-left:100px;
+        position:absolute;
+        left:27%;
+        top:57%;
     }
     .humidity{
+        margin-left:12px;
         border: none;
-        float: none;
-        margin-bottom:0px;
-        border-bottom:2px solid grey;
     }
     .wind{
-        padding-top:0px;
-        margin-top:0px;
-        margin:10px 10px;
+        top:25%;
     }
-    .temp{
-        margin-top:20px;
-    }
-    .sky{
-        margin:130px 30px 10px 155px;
-    } 
-    .tempType{
-        margin:240px 0 0 170px;
-    }
+
 }     
 
 @media (max-width:320px){
-    header{
-      text-align: center;
-      height:70px;
-      width:100%;
+    header{ 
+      height:120px;
    }
    input{
-       margin:14px 30px 14px 60px;
-       position:relative;
+     position: absolute;
+     left:8%;
    }
    .firstH1{
+      position: absolute;
+      top:50px;
+      left:3%;
+   }
+   .container1{
        position: relative;
-       margin: 0px 50px 50px 50px;
-   }
-   .container{
-       width:80%;
-       margin: 120px 33px 13px 33px;
-       height:470px;
-   }
-   .state{
-     position:absolute;
-     margin:15px 38px;
-   }
-   .sky{
-       margin:75px 10px 10px 92px;
+       width:100%;
+       border-radius:0;
+       margin-top: 0px;
    }
    .temp{
-       margin:115px 10px 10px 80px;
-       font-size: 66px;
+       position: absolute;
+       top:1%;
+       left:32%;
    }
-   .hum-wind{
-       margin:0;
-       padding:0;
-   }
-   .wind{
-       border-bottom: 2px solid rgb(230, 227, 227);
-       margin:0px 10px 30px 69px;
-       padding:0;
+   .city{
+       left:25%;
        border:none;
-   }
-   .humidity{
-     border: none;
-     margin:60px;
-     padding:0;
-   }
-   .tempType{
-       margin: 380px 10px 10px 110px;
+       top:25%;
+
    }
 }
