@@ -16,7 +16,7 @@ header{
 .firstH1{
    display: inline-block;
    position: relative;
-   left:52%;
+   left:56%;
 }
 input{
     left:21%;
@@ -95,7 +95,7 @@ input{
     font-family: 'Montserrat', sans-serif;  
     font-size: 26px;
 }
-@media (max-width:2560px){
+/* @media (max-width:2560px){
     header{
         height:120px;
         font-size: 20px;
@@ -129,7 +129,7 @@ input{
         padding-left:20px; 
         font-size: 36px;
     }
-}
+} */
 @media (max-width:1440px){
     header{
         height:85px;
