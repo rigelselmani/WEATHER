@@ -16,7 +16,7 @@ header{
 .firstH1{
    display: inline-block;
    position: relative;
-   left:56%;
+   left:49%;
 }
 input{
     left:21%;
@@ -95,41 +95,6 @@ input{
     font-family: 'Montserrat', sans-serif;  
     font-size: 26px;
 }
-/* @media (max-width:2560px){
-    header{
-        height:120px;
-        font-size: 20px;
-    }
-    .firstH1{
-        display: inline-block;
-        position:absolute;
-        left:60%;
-        top:2%;
-    }
-    input{
-        display: inline-block;
-        position: absolute;
-        left:21%;
-        font-size: 24px;
-        top:3%;
-    }
-    .container1{
-        height:600px;
-        font-size: 30px;
-    }
-    .hum-wind{
-        position: absolute;
-        left:26%;
-     }
-     .humidity{ 
-        font-size: 36px;
-        padding-right:20px;
-    }
-    .wind{
-        padding-left:20px; 
-        font-size: 36px;
-    }
-} */
 @media (max-width:1440px){
     header{
         height:85px;
