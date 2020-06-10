@@ -103,7 +103,7 @@ input{
     .firstH1{
         display: inline-block;
         position:absolute;
-        left:63%;
+        left:60%;
         top:2%;
     }
     input{
@@ -138,11 +138,13 @@ input{
     .firstH1{
         display: inline-block;
         position: absolute;
-        left:50%;
+        left:52%;
+        font-size: 30px;
     }
     input{
         display: inline-block;
         position: absolute;
+        font-size: 20px;
         left:21%;
         top:14px;
     }
@@ -158,7 +160,7 @@ input{
     }
     .firstH1{
       position: relative;
-      left:35%;
+      left:33%;
       top:80%;
       font-size: 29px;
     }
@@ -184,7 +186,7 @@ input{
       left:32%;
     }
     .firstH1{
-        left:30.5%;
+        left:28%;
     }
     .container{
        width:85%;
@@ -207,10 +209,11 @@ input{
     }
     .firstH1{  
         position: absolute; 
-        left:15%;
+        left:9%;
     }
     .container1{
         width:88%;
+        margin-top:70px;
     }
     .city{
         position: absolute;
@@ -234,7 +237,7 @@ input{
 
 @media (max-width:320px){
     header{ 
-      height:120px;
+      height:135px;
    }
    input{
      position: absolute;
@@ -242,7 +245,7 @@ input{
    }
    .firstH1{
       position: absolute;
-      top:50px;
+      top:52px;
       left:3%;
    }
    .container1{
