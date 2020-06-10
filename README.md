@@ -8,6 +8,8 @@
 
 * You can search by city name in the input ,the app responds with a result that match a searching word.
 
+* Responsive for diferent screen's, lap top as well as Phone screen.
+
 * Displays the temp,click C display in Celcius and click F to display temp in Fehrenheit,displays humidity and win-speed as well.
 
 
