@@ -77,6 +77,14 @@ textarea:focus, input:focus{
     top:39%;
     cursor: default;
 }
+.f:hover{
+    background-color: grey;
+    border-radius: 25px;
+}
+.c:hover{
+    background-color: grey;
+    border-radius: 25px;
+}
 .hum-wind{
     position: relative;
     top:67%;
