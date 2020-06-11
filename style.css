@@ -30,13 +30,12 @@ input{
     border-radius: 15px;
     color:white;
 }
-.input:focus{
-   border:none;   
+textarea:focus, input:focus{
+    outline: none;
 }
 ::placeholder{
     color:white; 
 }
-
 .container1{
     position: relative;
     background-color: #C33764;
@@ -76,6 +75,7 @@ input{
     font-size: 26px;
     right:21%;
     top:39%;
+    cursor: default;
 }
 .hum-wind{
     position: relative;
@@ -183,7 +183,7 @@ input{
     .city{
         position: absolute;
         left:49%;
-        top:20%;
+        top:23%;
     }
     .hum-wind{
         position:absolute;
@@ -214,7 +214,6 @@ input{
       left:3%;
    }
    .container1{
-       position: relative;
        width:100%;
        border-radius:0;
        margin-top: 0px;
@@ -227,7 +226,7 @@ input{
    .city{
        left:25%;
        border:none;
-       top:25%;
+       top:29%;
 
    }
 }
