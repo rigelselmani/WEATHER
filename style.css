@@ -39,7 +39,7 @@ textarea:focus, input:focus{
 }
 .container1{
     position: relative;
-    background-color: #C33764;
+    background-image: url("https://eoimages.gsfc.nasa.gov/images/imagerecords/84000/84662/rover__pho_7268_lrg.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     width:60%;
@@ -84,7 +84,7 @@ textarea:focus, input:focus{
 }
 .c:hover{
     background-color: grey;
-    border-radius: 25px;
+    border-radius: 10px;
 }
 .hum-wind{
     position: relative;
