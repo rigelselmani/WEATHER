@@ -43,41 +43,7 @@ $("input[type='text']").keypress(function(event){
         });
     }
 });   
-   //daily weather   for next 5 days
-//   function daily(){
 
-//     if(navigator.geolocation){
-//         console.log("geolocation aviable")
-//         navigator.geolocation.getCurrentPosition(position =>{
-//             var latit=position.coords.latitude;
-//             var longi=position.coords.longitude;
-   
-//     const queryURL="https://api.openweathermap.org/data/2.5/onecall?lat="+latit+"&lon="+longi+"&exclude=dayli&appid=0ab9af27ca97b79fdc2b37ec61800370&units=imperial"
-//     $.ajax({
-//         url:queryURL,
-//         method:"GET"
-//     }).then(function(response){
-//         firstDay(response)
-//         var d = new Date(response.daily[2].dt)
-//         console.log(d.getDayString())
-//     });
-//    });
-//      }else{
-//     console.log("Geolocation is not suported");
-//     }
-// }   
-
-//     function firstDay(respons){
-        // console.log(respons.daily)
-        // navigator.geolocation.getCurrentPosition(function(position) {
-        //     var sunset = new Date().sunset(position.coords.latitude, position.coords.longitude)
-        //     console.log(sunset);
-    //  });
-//         $(".day-min1").text(Math.floor(respons.daily[0].temp.min)+" °")
-//         $(".day-max1").text(Math.floor(respons.daily[0].temp.max)+" °")
-//     }
-// daily()
-    // end of daily logic for next 5 days
     function apiResponse(response){
         $(".temp").text(Math.floor(response.main.temp)+" °")
         $(".city").text(response.name);
@@ -131,3 +97,45 @@ $("input[type='text']").keypress(function(event){
 
 addLocation()
 });
+
+
+//    daily weather   for next 5 days
+function daily(){
+
+    if(navigator.geolocation){
+        console.log("geolocation aviable")
+        navigator.geolocation.getCurrentPosition(position =>{
+            var latit=position.coords.latitude;
+            var longi=position.coords.longitude;
+            console.log(latit)
+            console.log(longi)
+    const queryURL="https://api.openweathermap.org/data/2.5/onecall?lat="+latit+"&lon="+longi+"&exclude=dayli&appid=0ab9af27ca97b79fdc2b37ec61800370&units=imperial"
+    $.ajax({
+        url:queryURL,
+        method:"GET"
+    }).then(function(response){
+        firstDay(response)
+
+    });
+   });
+     }else{
+    console.log("Geolocation is not suported");
+    }
+}   
+
+    function firstDay(response){
+        var wDay=["sun","mon","tue","wed","thu","fri","sat"];
+        rowCount = response.daily;
+        var rowCount=8;
+
+        for (i=1;i<rowCount;i++){
+            var ts=new Date(response.daily[i].dt * 1000);
+            var forecast=wDay[ts.getDay()]
+        $(".weekDays").append("<h5>"+forecast+"</h5>");
+        $(".minTemp").append("<p>"+Math.floor(response.daily[i].temp.min)+" °"+"</p>")
+        $(".maxTemp").append("<p>"+Math.floor(response.daily[i].temp.max)+" °"+"</p>")
+        $(".p3").append(response.daily[i].weather[0].main)
+        }
+    }
+daily()
+    // end of daily logic for next 5 days
