@@ -49,7 +49,7 @@ $("input[type='text']").keypress(function(event){
         $(".city").text(response.name);
         $(".wind").text("Wind: "+Math.floor(response.wind.speed)+" MPH")
         $(".humidity").text("Humidity: "+response.main.humidity+" %")
-        $(".sky").text(response.weather[0].main)
+        // $(".sky").text(response.weather[0].main)
     }
     
     function imageDisplay(response){
@@ -57,16 +57,23 @@ $("input[type='text']").keypress(function(event){
         var day=response.weather[0].icon
 
         if(response.weather[0].main=="Rain"&&response.weather[0].icon.includes("d")){
+            $("img").attr("src", "images/3026277.sgv");            
             $('body').css('background-image', 'url(http://www.nosmokeandmirrors.com/wp-content/uploads/2016/12/drops-1436231_1280.jpg)');              
         }else if(response.weather[0].main=="Clouds"&&response.weather[0].icon.includes("d")){
             $('body').css('background-image', 'url(https://eoimages.gsfc.nasa.gov/images/imagerecords/84000/84662/rover__pho_7268_lrg.jpg)');              
+            $('.container1').css('color','#e7dfd5')
+            $("img").attr("src", "images/3026446.svg");  
         }else if(response.weather[0].main=="Clear"&&response.weather[0].icon.includes("d")){
+            $("img").attr("src", "images/890347.svg");
             $('body').css('background-image', 'url(https://bloximages.chicago2.vip.townnews.com/valdostadailytimes.com/content/tncms/assets/v3/editorial/8/ec/8ec8ad4f-a97f-5686-9b3d-91c2e79ca90e/5ad4263c86d82.image.jpg?resize=400%2C199)');              
         }else if(response.weather[0].main=="Rain"&&response.weather[0].icon.includes("n")){
+            $("img").attr("src", "images/3026277.sgv"); 
             $('body').css('background-image', 'url(https://i.ytimg.com/vi/7JyE47-Ykjo/maxresdefault.jpg)');              
         }else if(response.weather[0].main=="Clouds"&&response.weather[0].icon.includes("n")){
+            $("img").attr("src", "images/3026446.svg");  
             $('body').css('background-image', 'url(https://i.ytimg.com/vi/fh_PMSPe4FA/maxresdefault.jpg)');              
         }else if(response.weather[0].main=="Clear"&&response.weather[0].icon.includes("n")){
+            $("img").attr("src", "images/moonNight.svg");
             $('body').css('background-image', 'url(https://static.skillshare.com/uploads/parentClasses/f03056b1cea891ef9f1769aedfad5a79/ceac10d9)');              
         }
     }

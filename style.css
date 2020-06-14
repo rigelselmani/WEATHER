@@ -12,7 +12,7 @@ body{
     font-family: 'Montserrat', sans-serif; 
 }
 header{
-    background-color: #2b244d;
+    background-color: #5a5574;
     color:white;
     
 }
@@ -67,12 +67,19 @@ textarea:focus, input:focus{
     font-family: 'Montserrat', sans-serif;  
     border-bottom:3px solid white;
 }
-.sky{
+/* .sky{
     position:absolute;
     top:37%;
     left:13%;
     font-size: 26px;
     font-family: 'Montserrat', sans-serif;
+} */
+img{
+    position: relative;
+    width:50px;
+    height:50px;
+    left:100px;
+    top:140px;
 }
 .tempType{   
     position: absolute;
@@ -136,7 +143,7 @@ p{
 }
 @media (max-width:1440px){
     header{
-        height:60px;
+        height:50px;
         position:relative;
     }
     .firstH1{
@@ -148,7 +155,7 @@ p{
     input{
         display: inline-block;
         position: absolute;
-        font-size: 18px;
+        font-size: 15px;
         left:21%;
         top:14px;
     }
