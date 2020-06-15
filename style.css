@@ -73,13 +73,14 @@ img{
     height:50px;
     left:100px;
     top:140px;
+    margin:0;
 }
 .imageDays{
-    position:relative;
+    position: relative;
     display: inline-block;
     top:1px;
-    left:1px;
-    padding:0 25px;
+    left:0px;
+    padding:0 25px 0 25px;
 }
 .tempType{   
     position: absolute;
@@ -137,6 +138,7 @@ h5{
 }
 
 p{
+    position: relative;
     display: inline-block;
     margin-top:0;
     padding:1px 26px;
