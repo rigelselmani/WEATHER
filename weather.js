@@ -119,7 +119,7 @@ function daily(){
         url:queryURL,
         method:"GET"
     }).then(function(response){
-        firstDay(response)
+        fiveDaysWeather(response)
 
     });
    });
@@ -128,7 +128,7 @@ function daily(){
     }
 }   
 
-    function firstDay(response){
+    function fiveDaysWeather(response){
         var wDay=["sun","mon","tue","wed","thu","fri","sat"];
         rowCount = response.daily;
         var rowCount=8;
@@ -136,10 +136,20 @@ function daily(){
         for (i=1;i<rowCount;i++){
             var ts=new Date(response.daily[i].dt * 1000);
             var forecast=wDay[ts.getDay()]
-        $(".weekDays").append("<h5>"+forecast+"</h5>");
+            var sky=response.daily[i].weather[0].main;
+            console.log(sky)
+           $(".weekDays").append("<h5>"+forecast+"</h5>");// 
+         if(sky==="Rain"){
+            $(".imageDays").append("<img class='imageDays' src='images/rainyDay.svg'/>");
+         }else if(sky==="Clouds"){
+            $(".imageDays").append("<img class='imageDays' src='images/cloudyDay.svg'/>");
+         }else if(sky==="Clear"){
+            $(".imageDays").append("<img class='imageDays' src='images/sunnyDay.svg'/>");
+         }
+        // $(".image-days").append("<img src='images/sunnyDay.svg'/>")
+        // $(".imageDays").append("<p>"+sky+"</p>")
         $(".minTemp").append("<p>"+Math.floor(response.daily[i].temp.min)+" °"+"</p>")
         $(".maxTemp").append("<p>"+Math.floor(response.daily[i].temp.max)+" °"+"</p>")
-        $(".p3").append(response.daily[i].weather[0].main)
         }
     }
 daily()
