@@ -138,7 +138,7 @@ function daily(){
             var forecast=wDay[ts.getDay()]
             var sky=response.daily[i].weather[0].main;
             console.log(sky)
-           $(".weekDays").append("<h5>"+forecast+"</h5>");// 
+           $(".weekDays").append("<h5>"+forecast+"</h5>");
          if(sky==="Rain"){
             $(".imageDays").append("<img class='imageDays' src='images/rainyDay.svg'/>");
          }else if(sky==="Clouds"){
