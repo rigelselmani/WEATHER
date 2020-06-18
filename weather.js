@@ -65,7 +65,7 @@ $("input[type='text']").keypress(function(event){
             $("img").attr("src", "images/sunnyDay.svg");
             $('body').css('background-image', 'url(https://bloximages.chicago2.vip.townnews.com/valdostadailytimes.com/content/tncms/assets/v3/editorial/8/ec/8ec8ad4f-a97f-5686-9b3d-91c2e79ca90e/5ad4263c86d82.image.jpg?resize=400%2C199)');              
         }else if(response.weather[0].main=="Rain"&&response.weather[0].icon.includes("n")){
-            $("img").attr("src", "images/rainyDay.sgv"); 
+            $("img").attr("src", "images/rainyDay.svg"); 
             $('body').css('background-image', 'url(https://i.ytimg.com/vi/7JyE47-Ykjo/maxresdefault.jpg)');              
         }else if(response.weather[0].main=="Clouds"&&response.weather[0].icon.includes("n")){
             $("img").attr("src", "images/cloudyDay.svg");  
@@ -146,8 +146,6 @@ function daily(){
          }else if(sky==="Clear"){
             $(".imageDays").append("<img class='imageDays' src='images/sunnyDay.svg'/>");
          }
-        // $(".image-days").append("<img src='images/sunnyDay.svg'/>")
-        // $(".imageDays").append("<p>"+sky+"</p>")
         $(".minTemp").append("<p>"+Math.floor(response.daily[i].temp.min)+" °"+"</p>")
         $(".maxTemp").append("<p>"+Math.floor(response.daily[i].temp.max)+" °"+"</p>")
         }

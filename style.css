@@ -14,12 +14,12 @@ body{
 header{
     background-color: #5a5574;
     color:white;
-    
+    font-size: 10px;
 }
 .firstH1{
    display: inline-block;
    position: relative;
-   left:49%;
+   left:43%;
 }
 input{
     left:21%;
@@ -51,28 +51,28 @@ textarea:focus, input:focus{
     border-bottom:2px solid white;
     height:270px;
     margin-top: 40px;
-    box-shadow: 9px 9px 9px 9px rgb(0,0,0, 0.1);
+    box-shadow: 12px 12px 12px 12px rgba(53, 52, 52, 0.1);
 }
 .temp{
-    position: relative;
-    left:12%;
+    position: absolute;
+    left:5%;
     top:4%;
     font-family: 'Montserrat', sans-serif;
     font-size: 70px;
 }
 .city{
     position: absolute;
-    right:12%;
-    top:8%;
+    left:64%;
+    top:19%;
     font-family: 'Montserrat', sans-serif;  
     border-bottom:3px solid white;
 }
 img{
-    position: relative;
+    position: absolute;
     width:50px;
     height:50px;
-    left:100px;
-    bottom:10px;
+    left:7%;
+    top:50%;
 }
 .imageDays{
     position: relative;
@@ -117,6 +117,7 @@ img{
     font-size: 26px;
 }
 .container2{
+    position: relative;
     width:60%;
     height:250px;
     margin:auto;
@@ -140,9 +141,33 @@ p{
     position: relative;
     display: inline-block;
     margin-top:0;
-    padding:1px 26px;
-    left:5px;
+    padding:1px 25px;
 }
+/* @media (max-width:2560px){
+    header{
+        height:100px;
+    }
+    .firstH1{
+        display: inline;
+        position: absolute;
+        left:56%;
+        font-size: 40px;
+    }
+    input{
+        position:absolute;
+        top:24px;
+        font-size: 34px;
+    }
+    .container1{
+        font-size: 30px;
+    }
+    .tempType{
+        position:absolute;
+        left:62%;
+        top:60%;
+    }
+}
+
 @media (max-width:1440px){
     header{
         height:50px;
@@ -277,4 +302,4 @@ p{
        top:29%;
 
    }
-}
+} */
