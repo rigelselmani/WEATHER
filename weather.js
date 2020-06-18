@@ -136,8 +136,7 @@ function daily(){
             var ts=new Date(response.daily[i].dt * 1000);
             var forecast=wDay[ts.getDay()]
             var sky=response.daily[i].weather[0].main;
-            console.log(sky)
-            timeConverterWeekley(response.daily[i])
+            (response.daily[i],response.daily[i])
            $(".weekDays").append("<h5>"+forecast+"</h5>");
          if(sky==="Rain"){
             $(".imageDays").append("<img class='imageDays' src='images/rainyDay.svg'/>");
@@ -148,20 +147,28 @@ function daily(){
          }
         $(".minTemp").append("<p class='weeklyMinTemp'>"+Math.floor(response.daily[i].temp.min)+" °"+"</p>")
         $(".maxTemp").append("<p class='weeklyMaxTemp'>"+Math.floor(response.daily[i].temp.max)+" °"+"</p>")
-        }
+
+        // var celciusMin =(response.daily[i].temp.min -32) *(5/9)
+        // var celciusMax =(response.daily[i].temp.max -32) *(5/9)
+        // var fMin =response.daily[i].temp.min
+        // var fMax=response.daily[i].temp.max
+        $(".c").on("click",function(response1,response2){
+          $(".weeklyMinTemp").remove();
+          $(".weeklyMaxTemp").remove();
+          $(".minTemp").append("<p class='weeklyMinTemp'>"+Math.floor((response1.temp.min -32) *(5/9))+" °"+"</p>")
+          $(".maxTemp").append("<p class='weeklyMaxTemp'>"+Math.floor((response2.temp.min -32) *(5/9))+" °"+"</p>")
+        })
+        $(".f").on("click",function (response1,response2){
+            $(".weeklyMinTemp").remove();
+            $(".weeklyMaxTemp").remove();
+            $(".minTemp").append("<p class='weeklyMinTemp'>"+Math.floor(response2.temp.min)+" °"+"</p>")
+            $(".maxTemp").append("<p class='weeklyMaxTemp'>"+Math.floor(response1.temp.max)+" °"+"</p>")
+        })
+    }
     }
 
-    function timeConverterWeekley(response){
-        let minCelcius=(response.temp.min -32) *(5/9);
-        let maxCelcius=(response.temp.max -32) *(5/9);
-        $(".c").on("click",function(){
-          $(".weeklyMinTemp").text(Math.floor(minCelcius)+" °")
-          $(".weeklyMaxTemp").text(Math.floor(maxCelcius)+" °")
-        })
-        $(".f").on("click",function(){
-            $(".weeklyMinTemp").text(Math.floor(response.temp.min)+" °")
-            $(".weeklyMaxTemp").text(Math.floor(response.temp.max)+" °")
-        })
-    }
+    // function tempConverterWeekley(response){
+      
+    // }
 daily()
     // end of daily logic for next 5 days
