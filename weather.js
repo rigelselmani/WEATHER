@@ -49,7 +49,6 @@ $("input[type='text']").keypress(function(event){
         $(".city").text(response.name);
         $(".wind").text("Wind: "+Math.floor(response.wind.speed)+" MPH")
         $(".humidity").text("Humidity: "+response.main.humidity+" %")
-        // $(".sky").text(response.weather[0].main)
     }
     
     function imageDisplay(response){
@@ -138,6 +137,7 @@ function daily(){
             var forecast=wDay[ts.getDay()]
             var sky=response.daily[i].weather[0].main;
             console.log(sky)
+            timeConverterWeekley(response.daily[i])
            $(".weekDays").append("<h5>"+forecast+"</h5>");
          if(sky==="Rain"){
             $(".imageDays").append("<img class='imageDays' src='images/rainyDay.svg'/>");
@@ -146,9 +146,22 @@ function daily(){
          }else if(sky==="Clear"){
             $(".imageDays").append("<img class='imageDays' src='images/sunnyDay.svg'/>");
          }
-        $(".minTemp").append("<p>"+Math.floor(response.daily[i].temp.min)+" °"+"</p>")
-        $(".maxTemp").append("<p>"+Math.floor(response.daily[i].temp.max)+" °"+"</p>")
+        $(".minTemp").append("<p class='weeklyMinTemp'>"+Math.floor(response.daily[i].temp.min)+" °"+"</p>")
+        $(".maxTemp").append("<p class='weeklyMaxTemp'>"+Math.floor(response.daily[i].temp.max)+" °"+"</p>")
         }
+    }
+
+    function timeConverterWeekley(response){
+        let minCelcius=(response.temp.min -32) *(5/9);
+        let maxCelcius=(response.temp.max -32) *(5/9);
+        $(".c").on("click",function(){
+          $(".weeklyMinTemp").text(Math.floor(minCelcius)+" °")
+          $(".weeklyMaxTemp").text(Math.floor(maxCelcius)+" °")
+        })
+        $(".f").on("click",function(){
+            $(".weeklyMinTemp").text(Math.floor(response.temp.min)+" °")
+            $(".weeklyMaxTemp").text(Math.floor(response.temp.max)+" °")
+        })
     }
 daily()
     // end of daily logic for next 5 days
