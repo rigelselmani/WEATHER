@@ -150,14 +150,14 @@ p{
 .weeklyMaxTemp{
     display: inline-block;
 }
-/* @media (max-width:2560px){
+ @media (min-width:2560px){
     header{
         height:100px;
     }
     .firstH1{
         display: inline;
         position: absolute;
-        left:56%;
+        left:58%;
         font-size: 40px;
     }
     input{
@@ -166,83 +166,187 @@ p{
         font-size: 34px;
     }
     .container1{
-        font-size: 30px;
+       height:400px;
+       font-size: 33px;
+    }
+    .city{
+        top:29px;
     }
     .tempType{
-        position:absolute;
-        left:62%;
-        top:60%;
-    }
-}
-
-@media (max-width:1440px){
-    header{
-        height:50px;
         position:relative;
+        left:960px;
+        top:50px;
+        font-size: 43px;
     }
-    .firstH1{
-        display: inline-block;
-        position: absolute;
-        left:52%;
-        font-size: 20px;
+    .temp{
+        position:relative;
+        top:79px;
+        font-size:100px ;
     }
-    input{
-        display: inline-block;
-        position: absolute;
-        font-size: 15px;
-        left:21%;
-        top:14px;
+    .firstImg{
+        width:80px;
+        height:80px;
     }
     .hum-wind{
-        position: absolute;
-        left:20%;
+        position: relative;
+        left:300px;
+        top:10px;
+    }
+    .humidity{
+        font-size: 35px;
+    }
+    .wind{
+        font-size: 35px;
+    }
+    .container2{
+        font-size: 60px;
+        height:500px;
+        text-align: center;
+    }
+    .imageDays{
+        position:relative;
+        width:60px;
+        height:60px;
+        left:10px;
+        padding: 0px 68px;
+    }
+    h5{
+        padding:5px 50px;
+    }
+    .weeklyMinTemp{
+        padding:0 45px;
+    }
+    .weeklyMaxTemp{
+        padding:0 45px;
     }
 }
 @media (max-width:1024px){
-    input{
-        font-size: 20px;
-        left:36%;
-    }
-    .firstH1{
-      position: relative;
-      left:33%;
-      top:80%;
-      font-size: 29px;
-    }
-    .city{
-        position:absolute;
-        left:60%;
-        font-size: 29px;
-        border-bottom:3px solid white;
-    }
-    .hum-wind{
+  .container2{
+      font-size: 23px;
+      text-align: center;
+      padding:0;
+  }
+  h5{
+    margin:0;
+}
+.imageDays{
+    position: relative;
+    margin:0;
+    left:0px;
+    padding: 0 24px 0px 24px;
+}
+}
+ @media(max-width:414px){
+  header{
+      position :relative;
+      height:60px;
+      width:100%;
+  }
+  .firstH1{
+      position: absolute;
+      top:60px;
+      left:100px;
+  }
+  input{
+      position:absolute;
+      top:10px;
+      font-size: 20px;
+  }
+  .tempType{
+    position:relative;
+    left:90px;
+    top:50px;
+    font-size: 43px;
+ }
+ .container1{
+     position: relative;
+     margin:0;
+     width:100%;
+     height:300px;
+ }
+ .temp{
      position: absolute;
-     left:20%;
-    }
-    .humidity{
-        font-size: 22px;
-    }
-    .wind{
-        font-size: 22px;
-    }
+     left:160px;
+     top:70px;
+ }
+ .city{
+     position:absolute;
+     top:40px;
+     left:120px;
+ }
+ .tempType{
+     position: absolute;
+     left:132px;
+     top:220px;
+     width:100px;
+     font-size: 30px;
+ }
+ .firstImg{
+     display: none;
+ }
+ .hum-wind{
+     display: none;
+ }
+ .humidity{
+     border:none;
+     display: none;
+ }
+ .container2{
+     width:100%;
+     position: relative;
+     height:100%;
+ }
+ .weekDays{
+     position: relative;
+     width:100px;
+     margin-right: 0;
+ }
+ h5{
+     position: relative;
+     display: block;
+     width:10px;
+     left:5px;
+     /* text-align: left; */
+     margin:0;
+ }
+ .imageDays{
+     display: block;
+     position: relative;
+     margin:0;
+     left:80px;
+     top:18px;
+     padding:19px 0;
+     width:50px;
+ }
+ div.imageDays{
+     width:30px;
+     font-size: 10;
+ }
+ .weeklyMinTemp{
+    left:230px;
+    top:0px;
+    padding:20px 0px;
+    position: relative;
+    display: block;
+    width:45px;
+    margin: 0;
+ }
+ h5{
+    width:10px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+ }
+ .weeklyMaxTemp{
+    margin: 0;
+    left:320px;
+    top:10px;
+    padding:3px 0px;
+    position: relative;
+    display: block;
+    width:20px;
+ }
 }
-@media(max-width:768px){
-    input{
-      left:32%;
-    }
-    .firstH1{
-        left:28%;
-    }
-    .container{
-       width:85%;
-       text-align: center;
-    }
-    .city{
-        position: absolute;
-        right:4%;
-    }
-}
-@media (max-width:425px){
+/* @media (max-width:425px){
     header{
         text-align: center;
         height: 73px;
