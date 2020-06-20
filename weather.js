@@ -137,11 +137,11 @@ function daily(){
             var sky=response.daily[i].weather[0].main;
            $(".weekDays").append("<h5>"+forecast+"</h5>");
          if(sky==="Rain"){
-            $(".imageDays").append("<img class='imageDays' src='images/rainyDay.svg'/>");
+            $(".imageDays").append("<img class='imageDay' src='images/rainyDay.svg'/>");
          }else if(sky==="Clouds"){
-            $(".imageDays").append("<img class='imageDays' src='images/cloudyDay.svg'/>");
+            $(".imageDays").append("<img class='imageDay' src='images/cloudyDay.svg'/>");
          }else if(sky==="Clear"){
-            $(".imageDays").append("<img class='imageDays' src='images/sunnyDay.svg'/>");
+            $(".imageDays").append("<img class='imageDay' src='images/sunnyDay.svg'/>");
          }
         $(".minTemp").append("<p class='weeklyMinTemp'>"+Math.floor(response.daily[i].temp.min)+" °"+"</p>")
         $(".maxTemp").append("<p class='weeklyMaxTemp'>"+Math.floor(response.daily[i].temp.max)+" °"+"</p>")
