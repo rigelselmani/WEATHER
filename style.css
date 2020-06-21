@@ -76,7 +76,7 @@ textarea:focus, input:focus{
 .tempType{   
     position: absolute;
     font-size: 26px;
-    left:460px;
+    left:860px;
     bottom:30%;
     cursor: default;
 }
@@ -122,31 +122,33 @@ textarea:focus, input:focus{
 }
 h5{
     margin:0 0 14px 10px;
-    padding:10px 25px;
+    padding:10px 70px;
+    margin-left:20px;
+    text-align:center;
     color:white;
     opacity:1;
     display: inline-block;
 }
 .imageDays{
     position: relative;
-    /* width:31px;
-    height:30px; */
-    margin-left:15px;
+    width:31px;
+    height:30px;
     display: inline;
-    left:125px;
+    left:34px;
 }
 .imageDay{
     width:50px;
     height:50px;
     text-align: center;
-    padding:0 72px;
+    padding:0 75px;
 }
 p{
     position: relative;
     display: inline-block;
     margin-top:0;
     left:15px;
-    padding:1px 22px;
+    padding:1px 73px;
+    left:20px;
 }
 .weeklyMinTemp{
     display: inline-block;
@@ -227,13 +229,22 @@ p{
         padding:0 45px;
     }
 }
+@media (max-width:1780px x 600px){
+    .tempType{
+    position:absolute;
+    margin-left:500px;
+    }
+    .imageDay{
+        padding:0px;
+    }
+}
 @media (max-width:1440px){
     .container2{
-        position: relative;
-         text-align: center;
+    position: relative;
+    text-align: center;
     }
     .tempType{
-        left:65%;
+    left:65%;
     }
     .imageDays{
     position: relative;
@@ -241,18 +252,18 @@ p{
     left:10px;
     }
     .imageDay{
-        right:0;
-        width:50px;
-        padding:0px 25px;
+    right:0;
+    width:50px;
+    padding:0px 25px;
     }
 }
 @media (max-width:1024px){
   .container2{
-      font-size: 23px;
-      height:500px;
+    font-size: 23px;
+    height:500px;
   }
 h5{
-   margin:0 0;
+    margin:0 0;
 }
 .imageDays{
     position: relative;
@@ -265,19 +276,19 @@ h5{
 }
  @media(max-width:414px){
   header{
-      position :relative;
-      height:60px;
-      width:100%;
+    position :relative;
+    height:60px;
+    width:100%;
   }
   .firstH1{
-      position: absolute;
-      top:60px;
-      left:70px;
+    position: absolute;
+    top:60px;
+    left:70px;
   }
   input{
-      position:absolute;
-      top:10px;
-      font-size: 20px;
+    position:absolute;
+    top:10px;
+    font-size: 20px;
   }
   .tempType{
     position:relative;
