@@ -54,26 +54,26 @@ $("input[type='text']").keypress(function(event){
     
     function imageDisplay(response){
 
-        if(response.weather[0].main==="Rain"&&response.weather[0].icon.includes("d")){
+        if(response.weather[0].main=="Rain"&&response.weather[0].icon.includes("d")){
             $(".firstImg").attr("src", "images/rainyDay.svg");            
             $('body').css('background-image', 'url(https://media.giphy.com/media/t7Qb8655Z1VfBGr5XB/giphy.gif)');              
-        }else if(response.weather[0].main==="Clouds"&&response.weather[0].icon.includes("d")){
+        }else if(response.weather[0].main=="Clouds"&&response.weather[0].icon.includes("d")){
             $('body').css('background-image', 'url(https://eoimages.gsfc.nasa.gov/images/imagerecords/84000/84662/rover__pho_7268_lrg.jpg)');              
             $('.container1').css('color','#e7dfd5')
             $(".firstImg").attr("src", "images/cloudyDay.svg");  
-        }else if(response.weather[0].main==="Clear"&&response.weather[0].icon.includes("d")){
+        }else if(response.weather[0].main=="Clear"&&response.weather[0].icon.includes("d")){
             $(".firstImg").attr("src", "images/sunnyDay.svg");
             $('body').css('background-image', 'url(https://bloximages.chicago2.vip.townnews.com/valdostadailytimes.com/content/tncms/assets/v3/editorial/8/ec/8ec8ad4f-a97f-5686-9b3d-91c2e79ca90e/5ad4263c86d82.image.jpg?resize=400%2C199)');              
-        }else if(response.weather[0].main==="Thunderstorm"&&response.weather[0].icon.includes("d")){
+        }else if(response.weather[0].main=="Thunderstorm"&&response.weather[0].icon.includes("d")){
             $(".firstImg").attr("src", "https://image.flaticon.com/icons/png/512/300/300757.png");
             $('body').css('background-image', 'url(https://cbsnews1.cbsistatic.com/hub/i/r/2013/05/03/ac8d1585-c3f7-11e2-a43e-02911869d855/resize/620x465/883e1a6bce22dcfe73562dd9944e4933/021__MG_5863.jpg#)');              
-        }else if(response.weather[0].main==="Rain"&&response.weather[0].icon.includes("n")){
+        }else if(response.weather[0].main=="Rain"&&response.weather[0].icon.includes("n")){
             $(".firstImg").attr("src", "images/rainyDay.svg"); 
             $('body').css('background-image', 'url(https://media.giphy.com/media/xUA7aN1DtqNw3rRlao/giphy.gif)');              
-        }else if(response.weather[0].main==="Clouds"&&response.weather[0].icon.includes("n")){
+        }else if(response.weather[0].main=="Clouds"&&response.weather[0].icon.includes("n")){
             $(".firstImg").attr("src", "images/cloudyDay.svg");  
             $('body').css('background-image', 'url(https://i.ytimg.com/vi/fh_PMSPe4FA/maxresdefault.jpg)');              
-        }else if(response.weather[0].main==="Clear"&&response.weather[0].icon.includes("n")){
+        }else if(response.weather[0].main=="Clear"&&response.weather[0].icon.includes("n")){
             $(".firstImg").attr("src", "images/moonNight.svg");
             $('body').css('background-image', 'url(https://static.skillshare.com/uploads/parentClasses/f03056b1cea891ef9f1769aedfad5a79/ceac10d9)');              
         }

@@ -309,9 +309,9 @@ h5{
      width:100px;
      font-size: 30px;
  }
- /* .firstImg{
-     /* display: none; */
- /* } */
+ .firstImg{
+    display: none;
+  }
  .hum-wind{
      display: none;
  }
