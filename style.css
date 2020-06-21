@@ -76,7 +76,7 @@ textarea:focus, input:focus{
 .tempType{   
     position: absolute;
     font-size: 26px;
-    left:860px;
+    left:460px;
     bottom:30%;
     cursor: default;
 }
@@ -122,33 +122,31 @@ textarea:focus, input:focus{
 }
 h5{
     margin:0 0 14px 10px;
-    padding:10px 70px;
-    margin-left:20px;
-    text-align:center;
+    padding:10px 25px;
     color:white;
     opacity:1;
     display: inline-block;
 }
 .imageDays{
     position: relative;
-    width:31px;
-    height:30px;
+    /* width:31px;
+    height:30px; */
+    margin-left:15px;
     display: inline;
-    left:34px;
+    left:125px;
 }
 .imageDay{
     width:50px;
     height:50px;
     text-align: center;
-    padding:0 75px;
+    padding:0 72px;
 }
 p{
     position: relative;
     display: inline-block;
     margin-top:0;
     left:15px;
-    padding:1px 73px;
-    left:20px;
+    padding:1px 22px;
 }
 .weeklyMinTemp{
     display: inline-block;
