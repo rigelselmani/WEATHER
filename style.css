@@ -148,16 +148,42 @@ p{
     padding:0 20px;
     width: 8.5%;
 }
- /* @media(max-width:1024){
+ @media(max-width:1124px){
+    .tempType{
+        left:373px;
+    }
     h5{
-        width: 6%;
+        left:10px;
+        width: 7%;
+        padding: 0 17px;
+    }
+    .weekDays{
+        text-align: center;
     }
     .imageDay {
-        width: 8.5%;
+        width: 7%;
         height: 35px;
-        padding: 0 15px;
+        padding: 0 17px;
     }
-} */
+    .imageDays{
+        text-align: center;
+    }
+    .weeklyMinTemp {
+        width: 12.7%;
+        padding: 0 1px;
+        display: inline-block;
+    }
+    .minTemp{
+        text-align: center;
+    }
+    .weeklyMaxTemp {
+        padding: 0 1px;
+        width: 12.7%;
+    }
+    .maxTemp{
+        text-align: center;
+    }
+}
  @media(max-width:414px){
   header{
     position :relative;
