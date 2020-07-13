@@ -148,117 +148,15 @@ p{
     padding:0 20px;
     width: 8.5%;
 }
- /* @media (min-width:2560px){
-    header{
-        height:100px;
-    }
-    .firstH1{
-        display: inline;
-        position: absolute;
-        left:58%;
-        font-size: 40px;
-    }
-    input{
-        position:absolute;
-        top:24px;
-        font-size: 34px;
-    }
-    .container1{
-       height:400px;
-       font-size: 33px;
-    }
-    .city{
-        top:29px;
-    }
-    .tempType{
-        position:relative;
-        left:960px;
-        top:50px;
-        font-size: 43px;
-    }
-    .temp{
-        position:relative;
-        top:79px;
-        font-size:100px ;
-    }
-    .firstImg{
-        width:80px;
-        height:80px;
-    }
-    .hum-wind{
-        position: relative;
-        left:300px;
-        top:10px;
-    }
-    .humidity{
-        font-size: 35px;
-    }
-    .wind{
-        font-size: 35px;
-    }
-    .container2{
-        position: relative;
-        font-size: 60px;
-        height:500px;
-        text-align: center;
-    }
-    .imageDays{
-        position:relative;
-        left:10px;
-        /* padding: 0px 68px; */
-        /* display: inline-block;
-    } */
-    /* .imageDay{
-        width:70px;
-        height:70px;
-        padding:0 60px;
-    }
+ /* @media(max-width:1024){
     h5{
-        padding:5px 50px;
+        width: 6%;
     }
-    .weeklyMinTemp{
-        padding:0 45px;
+    .imageDay {
+        width: 8.5%;
+        height: 35px;
+        padding: 0 15px;
     }
-    .weeklyMaxTemp{
-        padding:0 45px;
-    }
-} */
-/* @media (min-width:1440px){
-    .container2{
-    position: relative;
-    text-align: center;
-    }
-    .tempType{
-    left:65%;
-    }
-    .imageDays{
-    position: relative;
-    }
-    .imageDay{
-    right:0;
-    width:50px;
-    padding:0px 20px;
-    }
-}
-@media (max-width:1024px){
-  .container2{
-    font-size: 23px;
-    height:500px;
-  }
-h5{
-    margin:0 1px;
-}
-.imageDays{
-    position: relative;
-}
-.imageDay{
-    width:43px;
-    height:40px;
-    padding: 0 15px;
-}
-.weeklyMaxTemp{
-   padding:0 21px;
-}
 } */
  @media(max-width:414px){
   header{
@@ -308,29 +206,27 @@ h5{
      width:100%;
      position: relative;
      height:100%;
-     font-size: 30px;
  }
  .weekDays{
-    position:absolute;
-    top:0px;
+    width:58px;
  }
  h5{
      position: relative;
      display: block;
-     padding:0 0 7px 0;
+     padding:0 0 2px 0;
      width:10px;
      left:5px;
  }
  .imageDays{
     position:absolute;
-    top:10px;
+    top:5px;
     left:13px;
  }
  .imageDay{
      width:35px;
      height:35px;
      position: relative;
-     top:10px;
+     top:5px;
      padding:0 0 18px 0;
      left:130px;
     
@@ -348,11 +244,7 @@ h5{
  }
  .minTemp{
      position: absolute;
-     top:10px;
- }
- h5{
-    width:10px;
-    left:10px;
+     top:5px;
  }
  .weeklyMaxTemp{
     left:294px;
