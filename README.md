@@ -16,3 +16,6 @@ and changes background img depending on the weather conditions.
 
 
  https://rigelselmani.github.io/WEATHER/
+
+
+![](images/weather.png)
