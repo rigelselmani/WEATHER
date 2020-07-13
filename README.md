@@ -6,11 +6,12 @@
 
 * The app will access your location and display the weather of the city you are in.
 
-* You can search by city name in the input ,the app responds with a result that match a searching word.
+* You can search by city name in the input field and the app responds with a result that match a searching word.
 
-* Responsive for diferent screen's, lap top as well as Phone screen.
+* Responsive for diferent screen's, lap top as well as iPhone 6,7,8 and x.
 
-* Displays the temp,click C display in Celcius and click F to display temp in Fehrenheit,displays humidity and win-speed as well.
+* Displays the temp,click C display in Celcius and click F to displays temp in Fehrenheit,displays humidity and win-speed as well
+and changes background img depending on the weather conditions.
 
 
 
