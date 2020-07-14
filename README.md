@@ -16,6 +16,8 @@ and changes background img depending on the weather conditions.
 
  https://rigelselmani.github.io/WEATHER/
 
+# laptop screen
 ![Laptop screen](https://github.com/rigelselmani/WEATHER/blob/master/images/clear-weather.png?raw=true)
 
+Iphone 6,7,8 screen
 ![Ipone screen](https://github.com/rigelselmani/WEATHER/blob/master/images/2020-07-14.png?raw=true)
