@@ -46,7 +46,7 @@ $("input[type='text']").keypress(function(event){
 });   
 
     function apiResponse(response){
-        $(".temp").text(Math.floor(response.main.temp)+" °")
+        $(".temp").text(Math.floor(response.main.temp)+"°")
         $(".city").text(response.name);
         $(".wind").text("Wind: "+Math.floor(response.wind.speed)+" MPH")
         $(".humidity").text("Humidity: "+response.main.humidity+" %")
