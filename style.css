@@ -120,34 +120,42 @@ textarea:focus, input:focus{
     border-bottom-right-radius: 20px;
     box-shadow: 9px 9px 9px 9px rgb(0,0,0, 0.1);
 }
+.weekDays{
+    text-align: center;
+}
 h5{
     width: 8.5%;
-    margin-left:4px;
-    padding:0 20px;
+    padding:0 22px;
     display: inline-block;
 }
 .imageDays{
-    position: relative;
+    text-align: center;
 }
 .imageDay{
     width: 8.5%;
     height:35px;
-    padding: 0 20px;
+    padding: 0 22px;
 }
 p{
-    position: relative;
     display: inline-block;
+    text-align: center;
     margin-top:0;
-    left:15px;
-    padding:1px 22px;
+}
+.minTemp{
+    text-align: center;
 }
 .weeklyMinTemp{
     width: 8.5%;
-    padding:0 20px;
+    padding:0 22px;
+    text-align: center;
+}
+.maxTemp{
+    text-align: center;
 }
 .weeklyMaxTemp{
-    padding:0 20px;
+    padding:0 22px;
     width: 8.5%;
+    text-align: center;
 }
  @media(max-width:1124px){
     .tempType{
@@ -193,7 +201,7 @@ p{
   .firstH1{
     position: relative;
     top:60px;
-    left:60px;
+    left:40px;
   }
   input{
     position:absolute;
@@ -204,23 +212,27 @@ p{
  .container1{
      margin:auto;
      width:100%;
-     height:300px;
+     height:180px;
      text-align: center;
  }
  .temp{
      position: static;
-     margin-top:45px;
-     font-size: 70px;
+     margin-top:-20px;
+     font-size: 60px;
+     text-align: center;
+     margin-bottom:5px;
  }
   .city{
       position: static;
       border-bottom: none;
-      margin-top:-30px;
+      margin-top:70px;
+      text-align: center;
  }
  p.tempType{
      position: static;
      font-size: 19px;
-     margin-top:0;
+     margin-top:-50px;
+     text-align: center;
  }
  .firstImg{
    display: none;
@@ -235,19 +247,19 @@ p{
  .container2{
      width:100%;
      position: relative;
-     height:100%;
+     height:240px;
+     font-size: 20px;
  }
  .weekDays{
-    width:58px;
+    width:40px;
     position:absolute;
-    top: -26px;
+    top: -20px;
  }
  h5{
      position: relative;
      display: block;
-     padding:0 0 1px 0;
      width:10px;
-     left:5px;
+     margin:25px 0 0 0;
  }
  .imageDays{
     position:absolute;
@@ -256,38 +268,35 @@ p{
     left:13px;
  }
  .imageDay{
-     width:35px;
-     height:35px;
-     position: relative;
-     top: 5px;
-     padding: 0 0 23px 0;
-     left:130px;
-    
+    width: 35px;
+    height: 22px;
+    position: relative;
+    top: -5px;
+    padding: 0 0 16px 0;
+    left: 110px;
  }
- /* div.imageDays{
-     width:30px;
-     font-size: 10;
- } */
  .weeklyMinTemp{
     left:210px;
-    padding:0 10px;
+    padding:0 1px;
     display: block;
     width:60px;
-    font-size: 29px;
+    /* height:35px; */
  }
  .minTemp{
      position: absolute;
-     top:20px;
+     top:7px;
+     left:260px
  }
  .weeklyMaxTemp{
     left:294px;
     display: block;
     width:59px;
-    padding:0 10px;
-    font-size: 29px;
+    padding:0 1px;
+    /* height:35px; */
  }
  .maxTemp{
      position:absolute;
-     top:20px;
+     top:7px;
+     left:310px;
  }
 }

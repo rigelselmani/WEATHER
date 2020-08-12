@@ -129,7 +129,7 @@ function daily(){
 }   
 
     function fiveDaysWeather(response){
-        var wDay=["sun","mon","tue","wed","thu","fri","sat"];
+        var wDay=["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
         rowCount = response.daily;
         var rowCount=8;
 
@@ -145,8 +145,8 @@ function daily(){
          }else if(sky==="Clear"){
             $(".imageDays").append("<img class='imageDay' src='images/sunnyDay.svg'/>");
          }
-        $(".minTemp").append("<p class='weeklyMinTemp'>"+Math.floor(response.daily[i].temp.min)+" °"+"</p>")
-        $(".maxTemp").append("<p class='weeklyMaxTemp'>"+Math.floor(response.daily[i].temp.max)+" °"+"</p>")
+        $(".minTemp").append("<p class='weeklyMinTemp'>"+Math.floor(response.daily[i].temp.min)+"</p>")
+        $(".maxTemp").append("<p class='weeklyMaxTemp'>"+Math.floor(response.daily[i].temp.max)+"</p>")
 
         $(".c").on("click", function(){
             $(".weeklyMinTemp").remove();
@@ -155,8 +155,8 @@ function daily(){
         var rowCount=8;
 
         for (i=1;i<rowCount;i++){
-            $(".minTemp").append("<p class='weeklyMinTemp'>"+Math.floor((response.daily[i].temp.min-32) *(5/9))+" °"+"</p>")
-            $(".maxTemp").append("<p class='weeklyMaxTemp'>"+Math.floor((response.daily[i].temp.max -32) *(5/9))+" °"+"</p>")
+            $(".minTemp").append("<p class='weeklyMinTemp'>"+Math.floor((response.daily[i].temp.min-32) *(5/9))+"</p>")
+            $(".maxTemp").append("<p class='weeklyMaxTemp'>"+Math.floor((response.daily[i].temp.max -32) *(5/9))+"</p>")
           }
         })
         $(".f").on("click",function (){
