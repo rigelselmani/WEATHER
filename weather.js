@@ -166,8 +166,8 @@ function daily(){
             var rowCount=8;
 
             for (i=1;i<rowCount;i++){
-            $(".minTemp").append("<p class='weeklyMinTemp'>"+Math.floor(response.daily[i].temp.min)+" °"+"</p>")
-            $(".maxTemp").append("<p class='weeklyMaxTemp'>"+Math.floor(response.daily[i].temp.max)+" °"+"</p>")
+            $(".minTemp").append("<p class='weeklyMinTemp'>"+Math.floor(response.daily[i].temp.min)+"</p>")
+            $(".maxTemp").append("<p class='weeklyMaxTemp'>"+Math.floor(response.daily[i].temp.max)+"</p>")
           }
         })
       }
