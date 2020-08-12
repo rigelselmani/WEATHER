@@ -14,7 +14,7 @@
 and changes background img depending on the weather conditions.
 
 
- https://rigelselmani.github.io/WEATHER/
+https://rigelselmani.github.io/WEATHER/
 
 # laptop screen
 ![Laptop screen](https://github.com/rigelselmani/WEATHER/blob/master/images/clear-weather.png?raw=true)
