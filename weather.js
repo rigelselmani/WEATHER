@@ -58,8 +58,8 @@ $("input[type='text']").keypress(function(event){
             $(".firstImg").attr("src", "images/rainyDay.svg");            
             $('body').css('background-image', 'url(https://media.giphy.com/media/t7Qb8655Z1VfBGr5XB/giphy.gif)');              
         }else if(response.weather[0].main=="Clouds"&&response.weather[0].icon.includes("d")){
-            $('body').css('background-image', 'url(https://eoimages.gsfc.nasa.gov/images/imagerecords/84000/84662/rover__pho_7268_lrg.jpg)');              
-            $('.container1').css('color','#e7dfd5')
+            $('body').css('background-image', 'url(https://media.giphy.com/media/gk3s6G7AdUNkey0YpE/giphy.gif)');              
+            // $('.container1').css('color','#e67e22')
             $(".firstImg").attr("src", "images/cloudyDay.svg");  
         }else if(response.weather[0].main=="Clear"&&response.weather[0].icon.includes("d")){
             $(".firstImg").attr("src", "images/sunnyDay.svg");
@@ -69,7 +69,7 @@ $("input[type='text']").keypress(function(event){
             $('body').css('background-image', 'url(https://cbsnews1.cbsistatic.com/hub/i/r/2013/05/03/ac8d1585-c3f7-11e2-a43e-02911869d855/resize/620x465/883e1a6bce22dcfe73562dd9944e4933/021__MG_5863.jpg#)');              
         }else if(response.weather[0].main=="Rain"&&response.weather[0].icon.includes("n")){
             $(".firstImg").attr("src", "images/rainyDay.svg"); 
-            $('body').css('background-image', 'url(https://media.giphy.com/media/d1G6qsjTJcHYhzxu/giphy.gif)');              
+            $('body').css('background-image', 'url(https://media.giphy.com/media/xUA7aN1DtqNw3rRlao/giphy.gif)');              
         }else if(response.weather[0].main=="Clouds"&&response.weather[0].icon.includes("n")){
             $(".firstImg").attr("src", "images/cloudyDay.svg");  
             $('body').css('background-image', 'url(https://i.ytimg.com/vi/fh_PMSPe4FA/maxresdefault.jpg)');              
