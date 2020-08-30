@@ -58,7 +58,7 @@ $("input[type='text']").keypress(function(event){
             $(".firstImg").attr("src", "images/rainyDay.svg");            
             $('body').css('background-image', 'url(https://media.giphy.com/media/t7Qb8655Z1VfBGr5XB/giphy.gif)');              
         }else if(response.weather[0].main=="Clouds"&&response.weather[0].icon.includes("d")){
-            $('body').css('background-image', 'url(https://media.giphy.com/media/gk3s6G7AdUNkey0YpE/giphy.gif)');              
+            $('body').css('background-image', 'url(https://media.giphy.com/media/lOkbL3MJnEtHi/giphy.gif)');              
             // $('.container1').css('color','#e67e22')
             $(".firstImg").attr("src", "images/cloudyDay.svg");  
         }else if(response.weather[0].main=="Clear"&&response.weather[0].icon.includes("d")){
@@ -69,10 +69,10 @@ $("input[type='text']").keypress(function(event){
             $('body').css('background-image', 'url(https://cbsnews1.cbsistatic.com/hub/i/r/2013/05/03/ac8d1585-c3f7-11e2-a43e-02911869d855/resize/620x465/883e1a6bce22dcfe73562dd9944e4933/021__MG_5863.jpg#)');              
         }else if(response.weather[0].main=="Rain"&&response.weather[0].icon.includes("n")){
             $(".firstImg").attr("src", "images/rainyDay.svg"); 
-            $('body').css('background-image', 'url(https://media.giphy.com/media/xUA7aN1DtqNw3rRlao/giphy.gif)');              
+            $('body').css('background-image', 'url(https://media0.giphy.com/media/l0Iy5fjHyedk9aDGU/giphy.gif?cid=ecf05e47d0991e571df33abd6635c5ebc2431c8854a9b6d0&rid=giphy.gif)');              
         }else if(response.weather[0].main=="Clouds"&&response.weather[0].icon.includes("n")){
             $(".firstImg").attr("src", "images/cloudyDay.svg");  
-            $('body').css('background-image', 'url(https://i.ytimg.com/vi/fh_PMSPe4FA/maxresdefault.jpg)');              
+            $('body').css('background-image', 'url(https://media.giphy.com/media/3o6Zt93byJYeHqvrwc/giphy.gif)');              
         }else if(response.weather[0].main=="Clear"&&response.weather[0].icon.includes("n")){
             $(".firstImg").attr("src", "images/moonNight.svg");
             $('body').css('background-image', 'url(https://static.skillshare.com/uploads/parentClasses/f03056b1cea891ef9f1769aedfad5a79/ceac10d9)');              
