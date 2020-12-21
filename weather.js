@@ -63,6 +63,9 @@ $("input[type='text']").keypress(function(event){
         }else if(response.weather[0].main=="Mist"&&response.weather[0].icon.includes("d")){
             $('body').css('background-image', 'url(https://www.weblearneng.com/wp-content/uploads/2009/12/fogy2.jpg)');              
             $(".firstImg").attr("src", "images/foggy.svg");  
+        }else if(response.weather[0].main=="Haze"&&response.weather[0].icon.includes("d")){
+            $('body').css('background-image', 'url(https://www.weblearneng.com/wp-content/uploads/2009/12/fogy2.jpg)');              
+            $(".firstImg").attr("src", "images/foggy.svg");  
         }else if(response.weather[0].main=="Clear"&&response.weather[0].icon.includes("d")){
             $(".firstImg").attr("src", "images/sunnyDay.svg");
             $('body').css('background-image', 'url(https://bloximages.chicago2.vip.townnews.com/valdostadailytimes.com/content/tncms/assets/v3/editorial/8/ec/8ec8ad4f-a97f-5686-9b3d-91c2e79ca90e/5ad4263c86d82.image.jpg?resize=400%2C199)');              
@@ -82,6 +85,9 @@ $("input[type='text']").keypress(function(event){
             $('body').css('background-image', 'url(https://media.giphy.com/media/bGaOdqeqYQKc0/giphy.gif)');              
             $(".firstImg").attr("src", "images/snow.svg");  
         }else if(response.weather[0].main=="Mist"&&response.weather[0].icon.includes("n")){
+            $('body').css('background-image', 'url(https://www.weblearneng.com/wp-content/uploads/2009/12/fogy2.jpg)');              
+            $(".firstImg").attr("src", "images/foggy.svg");  
+        }else if(response.weather[0].main=="Haze"&&response.weather[0].icon.includes("n")){
             $('body').css('background-image', 'url(https://www.weblearneng.com/wp-content/uploads/2009/12/fogy2.jpg)');              
             $(".firstImg").attr("src", "images/foggy.svg");  
         }
