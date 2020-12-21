@@ -55,41 +55,41 @@ $("input[type='text']").keypress(function(event){
     function imageDisplay(response){
 
         if(response.weather[0].main=="Rain"&&response.weather[0].icon.includes("d")){
-            $(".firstImg").attr("src", "images/rainyDay.svg");            
+            $(".container1-icon").attr("src", "images/rainyDay.svg");            
             $('body').css('background-image', 'url(https://media.giphy.com/media/t7Qb8655Z1VfBGr5XB/giphy.gif)');              
         }else if(response.weather[0].main=="Snow"&&response.weather[0].icon.includes("d")){
             $('body').css('background-image', 'url(https://media.giphy.com/media/gH2bKIakvLuW4/giphy.gif)');              
-            $(".firstImg").attr("src", "images/snow.svg");  
+            $(".container1-icon").attr("src", "images/snow.svg");  
         }else if(response.weather[0].main=="Mist"&&response.weather[0].icon.includes("d")){
-            $('body').css('background-image', 'url(https://www.weblearneng.com/wp-content/uploads/2009/12/fogy2.jpg)');              
-            $(".firstImg").attr("src", "images/foggy.svg");  
+            $('body').css('background-image', 'url(https://tse2.mm.bing.net/th?id=OIP.2hV_Ft6G8gD3jM-UxFQF2gHaE8&pid=Api&P=0&w=260&h=174)');              
+            $(".container1-icon").attr("src", "images/foggy.svg");  
         }else if(response.weather[0].main=="Haze"&&response.weather[0].icon.includes("d")){
-            $('body').css('background-image', 'url(https://www.weblearneng.com/wp-content/uploads/2009/12/fogy2.jpg)');              
-            $(".firstImg").attr("src", "images/foggy.svg");  
+            $('body').css('background-image', 'url(https://tse2.mm.bing.net/th?id=OIP.2hV_Ft6G8gD3jM-UxFQF2gHaE8&pid=Api&P=0&w=260&h=174)');              
+            $(".container1-icon").attr("src", "images/foggy.svg");  
         }else if(response.weather[0].main=="Clear"&&response.weather[0].icon.includes("d")){
-            $(".firstImg").attr("src", "images/sunnyDay.svg");
+            $(".container1-icon").attr("src", "images/sunnyDay.svg");
             $('body').css('background-image', 'url(https://bloximages.chicago2.vip.townnews.com/valdostadailytimes.com/content/tncms/assets/v3/editorial/8/ec/8ec8ad4f-a97f-5686-9b3d-91c2e79ca90e/5ad4263c86d82.image.jpg?resize=400%2C199)');              
         }else if(response.weather[0].main=="Thunderstorm"&&response.weather[0].icon.includes("d")){
-            $(".firstImg").attr("src", "https://image.flaticon.com/icons/png/512/300/300757.png");
+            $(".container1-icon").attr("src", "https://image.flaticon.com/icons/png/512/300/300757.png");
             $('body').css('background-image', 'url(https://cbsnews1.cbsistatic.com/hub/i/r/2013/05/03/ac8d1585-c3f7-11e2-a43e-02911869d855/resize/620x465/883e1a6bce22dcfe73562dd9944e4933/021__MG_5863.jpg#)');              
         }else if(response.weather[0].main=="Rain"&&response.weather[0].icon.includes("n")){
-            $(".firstImg").attr("src", "images/rainyDay.svg"); 
+            $(".container1-icon").attr("src", "images/rainyDay.svg"); 
             $('body').css('background-image', 'url(https://media0.giphy.com/media/l0Iy5fjHyedk9aDGU/giphy.gif?cid=ecf05e47d0991e571df33abd6635c5ebc2431c8854a9b6d0&rid=giphy.gif)');              
         }else if(response.weather[0].main=="Clouds"&&response.weather[0].icon.includes("n")){
-            $(".firstImg").attr("src", "images/cloudyDay.svg");  
+            $(".container1-icon").attr("src", "images/cloudyDay.svg");  
             $('body').css('background-image', 'url(https://media.giphy.com/media/3o6Zt93byJYeHqvrwc/giphy.gif)');              
         }else if(response.weather[0].main=="Clear"&&response.weather[0].icon.includes("n")){
-            $(".firstImg").attr("src", "images/moonNight.svg");
+            $(".container1-icon").attr("src", "images/moonNight.svg");
             $('body').css('background-image', 'url(https://static.skillshare.com/uploads/parentClasses/f03056b1cea891ef9f1769aedfad5a79/ceac10d9)');              
         }else if(response.weather[0].main=="Snow"&&response.weather[0].icon.includes("n")){
             $('body').css('background-image', 'url(https://media.giphy.com/media/bGaOdqeqYQKc0/giphy.gif)');              
-            $(".firstImg").attr("src", "images/snow.svg");  
+            $(".container1-icon").attr("src", "images/snow.svg");  
         }else if(response.weather[0].main=="Mist"&&response.weather[0].icon.includes("n")){
-            $('body').css('background-image', 'url(https://www.weblearneng.com/wp-content/uploads/2009/12/fogy2.jpg)');              
-            $(".firstImg").attr("src", "images/foggy.svg");  
+            $('body').css('background-image', 'url(https://tse2.mm.bing.net/th?id=OIP.2hV_Ft6G8gD3jM-UxFQF2gHaE8&pid=Api&P=0&w=260&h=174)');              
+            $(".container1-icon").attr("src", "images/foggy.svg");  
         }else if(response.weather[0].main=="Haze"&&response.weather[0].icon.includes("n")){
-            $('body').css('background-image', 'url(https://www.weblearneng.com/wp-content/uploads/2009/12/fogy2.jpg)');              
-            $(".firstImg").attr("src", "images/foggy.svg");  
+            $('body').css('background-image', 'url(https://tse2.mm.bing.net/th?id=OIP.2hV_Ft6G8gD3jM-UxFQF2gHaE8&pid=Api&P=0&w=260&h=174)');              
+            $(".container1-icon").attr("src", "images/foggy.svg"); 
         }
     }
 
