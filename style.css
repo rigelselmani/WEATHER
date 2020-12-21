@@ -12,7 +12,7 @@ body{
     background: linear-gradient(to bottom, #C33764, #1D2671); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    font-family: 'Montserrat', sans-serif; 
+    font-family: sans-serif;
 }
 header{
     background-color: #5a5574;
@@ -73,210 +73,44 @@ textarea:focus, input:focus{
 }
 /* Second-container */
 .container2{
-    position: relative;
     width:60%;
-    height:250px;
     margin:auto;
-    margin-bottom:40px;
     color:white;
     font-size:27px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     box-shadow: 9px 9px 9px 9px rgb(0,0,0, 0.1);
+    display: flex;
+    flex-direction: column;
 }
-/* .weekDays{
-    text-align: center;
-}
-h5{
-    width: 8.5%;
-    padding:0 22px;
-    display: inline-block;
-}
+.weekDays{
+    padding:20px 0 10px 0;
+    display: flex;
+    justify-content: space-evenly;
+}  
+
+
 .imageDays{
-    text-align: center;
+    padding:20px 0 30px 0;
+    display: flex;
+    justify-content: space-evenly;
 }
 .imageDay{
-    width: 8.5%;
-    height:35px;
-    padding: 0 22px;
+    width:2.2%;
+    height:34px;
 }
-p{
-    display: inline-block;
-    text-align: center;
-    margin-top:0;
-}
+
 .minTemp{
-    text-align: center;
-}
-.weeklyMinTemp{
-    width: 8.5%;
-    padding:0 22px;
-    text-align: center;
+    padding:30px 0 10px 0; 
+    display: flex;
+    justify-content: space-evenly;
 }
 .maxTemp{
-    text-align: center;
+    padding:10px 0 30px 0; 
+    display: flex;
+    justify-content: space-evenly;
 }
-.weeklyMaxTemp{
-    padding:0 22px;
-    width: 8.5%;
-    text-align: center;
-} */
- /* @media(max-width:1124px){
-    .tempType{
-        left:373px;
-    }
-    h5{
-        width: 5.5%;
-        padding: 0 21px;
-    }
-    .weekDays{
-        text-align: center;
-    }
-    .imageDay {
-        width: 6.5%;
-        height: 35px;
-        padding: 0 19.5px;
-    }
-    .imageDays{
-        text-align: center;
-    }
-    .weeklyMinTemp {
-        width: 12.7%;
-        padding: 0 1px;
-        display: inline-block;
-    }
-    .minTemp{
-        text-align: center;
-    }
-    .weeklyMaxTemp {
-        padding: 0 1px;
-        width: 12.7%;
-    }
-    .maxTemp{
-        text-align: center;
-    }
-}
+/*
  @media(max-width:414px){
-     body{
-         position:static;
-         height:100%;
-     }
-  header{
-    position :relative;
-    height:60px;
-    width:100%;
-  }
-  .firstH1{
-    position: relative;
-    top:60px;
-    left:40px;
-  }
-  input{
-    position:absolute;
-    top:10px;
-    font-size: 20px;
-    left:55px;
-  }
- .container1{
-     margin:auto;
-     width:100%;
-     height:190px;
-     box-shadow: none;
-     text-align: center;
-     border-radius: none;
- }
- .temp{
-     position: static;
-     margin-top:-20px;
-     font-size: 60px;
-     text-align: center;
-     margin-bottom:5px;
- }
-  .city{
-      position: static;
-      border-bottom: none;
-      margin-top:70px;
-      text-align: center;
- }
- p.tempType{
-     position: static;
-     font-size: 19px;
-     margin-top:-50px;
-     text-align: center;
- }
- .firstImg{
-   display: none;
-  }
- .hum-wind{
-     display: none;
- }
- .humidity{
-     border:none;
-     display: none;
- }
- .container2{
-     width:100%;
-     position: relative;
-     font-size: 20px;
-     height:308px;
-     box-shadow: none;
-     margin:0;
-     border-radius: none;
- }
- .weekDays{
-    width:40px;
-    position:absolute;
-    top: -20px;
- }
- h5{
-     position: relative;
-     display: inline-block;
-     width:10px;
-     margin:25px 0 0 0;
- }
- .imageDays{
-    position:absolute;
-    position: relative;
-    top:15px;
-    height:279px;
-    width:30px;
-    left:13px;
- }
- .imageDay{
-    position: absolute;
-    position:relative;
-    width: 35px;
-    height: 22px;
-    top: 5px;
-    padding: 0 0 16px 0;
-    left: 110px;
- }
- .imageDay:last-child{
-     padding-bottom:8px;
- }
- .weeklyMinTemp{
-     
-    left:210px;
-    padding:0 1px;
-    display: block;
-    width:60px;
- }
- .minTemp{
-    height:282px;
-     position: absolute;
-     top:7px;
-     left:260px
- }
- .weeklyMaxTemp{
-    left:294px;
-    display: block;
-    width:59px;
-    padding:0 1px;
- }
- .maxTemp{
-    height:282px;
-     position:absolute;
-     top:7px;
-     left:310px;
- }
+   
 } */

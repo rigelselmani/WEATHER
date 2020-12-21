@@ -162,6 +162,8 @@ function daily(){
             $(".imageDays").append("<img class='imageDay' src='images/snow.svg'/>");
          }else if(sky==="Mist"){
             $(".imageDays").append("<img class='imageDay' src='images/fogy.svg'/>");
+         }else if(sky==="Haze"){
+            $(".imageDays").append("<img class='imageDay' src='images/fogy.svg'/>");
          }
         $(".minTemp").append("<p class='weeklyMinTemp'>"+Math.floor(response.daily[i].temp.min)+"</p>")
         $(".maxTemp").append("<p class='weeklyMaxTemp'>"+Math.floor(response.daily[i].temp.max)+"</p>")
