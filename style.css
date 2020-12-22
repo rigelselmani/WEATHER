@@ -56,7 +56,11 @@ textarea:focus, input:focus{
 .temp{
     padding-bottom:10px;
 }
-.actual-city{
+.c{
+    cursor: -webkit-grab; cursor: grab;
+}
+.f{
+    cursor: -webkit-grab; cursor: grab;
 }
 .city{
     padding-bottom:10px;
@@ -107,10 +111,120 @@ textarea:focus, input:focus{
 }
 .maxTemp{
     padding:10px 0 30px 0; 
+    margin-bottom:50px;
     display: flex;
     justify-content: space-evenly;
 }
-/*
- @media(max-width:414px){
-   
-} */
+
+ @media(max-width:1440px){
+    .imageDay{
+        width:3%;
+        height:44px;
+    }
+}
+@media(max-width:1024px){
+    .imageDay{
+        width:3.8%;
+        height:50px;
+    }
+}
+@media(max-width:768px){
+    .container1{
+       width:80%;
+    }
+    .container2{
+        width:80%;
+     }
+    .imageDay{
+        width:4.3%;
+        height:56px;
+    }
+    .imageDays{
+        padding:3px 0 6px 0;
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+@media(max-width:425px){
+    body{
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+    header{
+        margin-bottom:50px;
+    }
+    input{
+        padding:10px;
+    }
+    .date{
+        display: none;
+    }
+    .container1{
+        font-family: 'Roboto', sans-serif;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        width:100%;
+    }
+    .actual-city{
+        text-align: center;
+        margin-bottom:10px;
+    }
+    .today-temp-img{
+        text-align: center;
+        padding:0;
+    }
+    .temp{
+        font-size: 100px;
+        font-weight: none;
+        padding-bottom:0px;
+        margin-bottom:0;
+    }
+    .today-hum-wind{
+        display: none;
+    }
+    .container2{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding:5px;
+        width:100%;
+    }
+    .weekDays{
+        margin-left:20px;
+        padding:10px;
+        flex-direction :column;
+        justify-content: space-between;
+    } 
+
+    .imageDays{
+        padding:5px 0 5px 40px ;
+        flex-direction :column;
+        justify-content: space-between;
+    }
+    .imageDay{
+        margin:0;
+        width:11%;
+        height:26px;
+    }
+    .minTemp{
+        padding:0;
+        margin:10px 10px 10px 0;
+        flex-direction :column;
+        justify-content: space-between;
+    }
+    .maxTemp{
+        margin:10px 20px 10px 10px;
+        padding:0;
+        flex-direction :column;
+        justify-content: space-between;
+    }
+}
+@media(max-width:320px){
+        .imageDay{
+            margin:0;
+            width:19%;
+            height:40px;
+        }
+}
