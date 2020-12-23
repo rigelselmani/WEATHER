@@ -12,7 +12,6 @@ body{
     width: auto ;
     max-width: 100% ;
     height: auto ;
-    font-family: sans-serif;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -20,6 +19,7 @@ body{
     font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
+    justify-content:space-between;
 }
 header{
     background-color: #5a5574;
@@ -197,6 +197,9 @@ footer{
         width: auto ;
         max-width: 100% ;
         height: auto;
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
     }
     header{
         margin-bottom:1px;
@@ -243,12 +246,14 @@ footer{
     .weekDays{
         margin-left:20px;
         padding:10px;
+        display:flex;
         flex-direction :column;
         justify-content: space-between;
     } 
 
     .imageDays{
         padding:5px 0 5px 40px ;
+        display:flex;
         flex-direction :column;
         justify-content: space-between;
     }
@@ -260,12 +265,14 @@ footer{
     .minTemp{
         padding:0;
         margin:10px 10px 10px 0;
+        display:flex;
         flex-direction :column;
         justify-content: space-between;
     }
     .maxTemp{
         margin:10px 20px 10px 10px;
         padding:0;
+        display:flex;
         flex-direction :column;
         justify-content: space-between;
     }
