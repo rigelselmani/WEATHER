@@ -24,7 +24,7 @@ header{
     background-color: #5a5574;
     color:white;
     font-size: 12px;
-    margin-bottom:100px;
+    margin-bottom:50px;
     padding:20px;
     display:flex;
     flex-direction:row;
@@ -49,7 +49,7 @@ textarea:focus, input:focus{
 .container1{
     width:60%;
     color:white;
-    padding:40px 10px 40px 10px;
+    padding:10px 10px 40px 10px;
     margin: auto;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
@@ -91,7 +91,7 @@ textarea:focus, input:focus{
 /* Second-container */
 .container2{
     width:60%;
-    padding:40px 10 40px 10px;
+    padding:40px 10px 10px 10px;
     margin:auto;
     margin-bottom:20px;
     color:white;
@@ -136,8 +136,9 @@ footer{
     width:100%;
     padding: 12px;
     position: fixed;
-    bottom:0;
-    margin-top:40px;
+    left: 0;
+    bottom: 0;
+    margin-top:10px;
     text-align: center;
     font-family: 'Roboto', sans-serif;
   
@@ -178,6 +179,7 @@ footer{
        width:80%;
     }
     .container2{
+
         width:80%;
      }
     .imageDay{
@@ -197,6 +199,7 @@ footer{
         max-width: 100% ;
         height: auto;
         display:flex;
+        padding:0;
         flex-direction:column;
         justify-content:space-between;
     }
@@ -210,7 +213,10 @@ footer{
         display: none;
     }
     .container1{
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
         font-family: 'Roboto', sans-serif;
+        padding: 20px 0px 10px 0;
         display: flex;
         flex-direction: column-reverse;
         justify-content: space-evenly;
@@ -234,63 +240,72 @@ footer{
         display: none;
     }
     .container2{
-        padding:5px;
+        padding-top:10px;
         display:flex;
         flex-direction: row;
-        justify-content: space-evenly;
-        width:100%;
+        justify-content: space-around;
+        width:90%;
         border: none;
         box-shadow:none;
     }
     .weekDays{
-        margin-left:20px;
-        padding:10px;
+        padding:0px;
         display:flex;
         flex-direction :column;
         justify-content: space-between;
     } 
 
     .imageDays{
-        padding:5px 0 5px 40px ;
+        padding:5px 0 5px 10px;
+        width:20%;
         display:flex;
         flex-direction :column;
         justify-content: space-between;
     }
     .imageDay{
         margin:0;
-        width:11%;
+        width:23%;
         height:26px;
     }
     .minTemp{
         padding:0;
-        margin:10px 10px 10px 0;
+        margin:5px 0px 0px 0;
         display:flex;
         flex-direction :column;
         justify-content: space-between;
     }
     .maxTemp{
-        margin:10px 20px 10px 10px;
+        margin:5px 0px 0px 0px;
         padding:0;
         display:flex;
         flex-direction :column;
         justify-content: space-between;
     }
     footer{
-        padding:10px;
+        padding:0px;
         font-size:5px;
+        margin-top:0px;
+        height:50px;
+       }
+       .footer{
+           padding:10px;
        }
        span{
            font-size:15px;
        }
     .p-footer1{
+        
         font-size:15px;
     }
 }
 @media(max-width:320px){
+       .imageDays{
+          width:20%;
+       }
         .imageDay{
             margin:0;
-            width:19%;
-            height:40px;
+            width:26%;
+            height:26px;
         }
         .container2{
             margin-bottom:50px;
