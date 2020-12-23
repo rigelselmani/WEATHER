@@ -60,7 +60,7 @@ $("input[type='text']").keypress(function(event){
             $(".container1-icon").attr("src", "images/rainyDay.svg");            
             $('body').css('background-image', 'url(https://media.giphy.com/media/t7Qb8655Z1VfBGr5XB/giphy.gif)');              
         }else if(response.weather[0].main=="Snow"&&response.weather[0].icon.includes("d")){
-            $('body').css('background-image', 'url(https://media.giphy.com/media/gH2bKIakvLuW4/giphy.gif)');              
+            $('body').css('background-image', 'url(https://media.giphy.com/media/j05IjxSs9eiAN9c2Rb/giphy.gif)');              
             $(".container1-icon").attr("src", "images/snow.svg");  
         }else if(response.weather[0].main=="Mist"&&response.weather[0].icon.includes("d")){
             $('body').css('background-image', 'url(https://tse2.mm.bing.net/th?id=OIP.2hV_Ft6G8gD3jM-UxFQF2gHaE8&pid=Api&P=0&w=260&h=174)');              
