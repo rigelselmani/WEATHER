@@ -53,8 +53,10 @@ $("input[type='text']").keypress(function(event){
     }
     
     function imageDisplay(response){
-
-        if(response.weather[0].main=="Rain"&&response.weather[0].icon.includes("d")){
+        if(response.weather[0].main=="Clouds"&&response.weather[0].icon.includes("d")){
+            $(".container1-icon").attr("src", "images/cloudyDay.svg");            
+            $('body').css('background-image', 'url(https://media.giphy.com/media/t7Qb8655Z1VfBGr5XB/giphy.gif)');              
+        }if(response.weather[0].main=="Rain"&&response.weather[0].icon.includes("d")){
             $(".container1-icon").attr("src", "images/rainyDay.svg");            
             $('body').css('background-image', 'url(https://media.giphy.com/media/t7Qb8655Z1VfBGr5XB/giphy.gif)');              
         }else if(response.weather[0].main=="Snow"&&response.weather[0].icon.includes("d")){
@@ -96,10 +98,10 @@ $("input[type='text']").keypress(function(event){
     function tempConverter(response){
         let celcius=(response.main.temp -32) *(5/9);
         $(".c").on("click",function(){
-          $(".temp").text(Math.floor(celcius)+" °")
+          $(".temp").text(Math.floor(celcius)+"°")
         })
         $(".f").on("click",function(){
-            $(".temp").text(Math.floor(response.main.temp)+" °")
+            $(".temp").text(Math.floor(response.main.temp)+"°")
         })
     }
 
