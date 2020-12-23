@@ -7,19 +7,35 @@ body{
     background: #1D2671;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom, #C33764, #1D2671);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to bottom, #C33764, #1D2671); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    /* background-repeat: no-repeat;
+    background-size: 100% 100%; */
     font-family: sans-serif;
+    color:white;
+    /* width: auto ;
+    max-width: 100% ;
+    height: auto ;
+    font-family: sans-serif;
+    */ 
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 header{
     background-color: #5a5574;
     color:white;
     font-size: 12px;
     margin-bottom:100px;
-    padding:13px;
+    padding:20px;
     display:flex;
     flex-direction:row;
     justify-content: space-evenly;
+}
+#date{
+    color:white;
 }
  input{
     border:none;
@@ -37,7 +53,7 @@ textarea:focus, input:focus{
 .container1{
     width:60%;
     color:white;
-    padding:40px;
+    padding:40px 10px 40px 10px;
     margin: auto;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
@@ -52,12 +68,15 @@ textarea:focus, input:focus{
 }
 .temp{
     padding-bottom:10px;
+    font-size: 60px;
 }
 .c{
     cursor: -webkit-grab; cursor: grab;
+    color:white;
 }
 .f{
     cursor: -webkit-grab; cursor: grab;
+    color:white;
 }
 .city{
     padding-bottom:10px;
@@ -67,6 +86,7 @@ textarea:focus, input:focus{
    font-weight: bold;
    font-size: 20px;
    letter-spacing: 2px;
+   color: white;
 }
 .container1-icon{
     flex-basis:10%;
@@ -75,12 +95,14 @@ textarea:focus, input:focus{
 /* Second-container */
 .container2{
     width:60%;
+    padding:40px 10 40px 10px;
     margin:auto;
+    margin-bottom:20px;
     color:white;
     font-size:27px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    box-shadow: 9px 9px 9px 9px rgb(0,0,0, 0.1);
+    box-shadow: 9px 9px 9px 9px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
 }
@@ -112,7 +134,37 @@ textarea:focus, input:focus{
     display: flex;
     justify-content: space-evenly;
 }
-
+footer{
+    background-color: rgb(63,81,181);
+    color:rgb(26, 25, 25);
+    width:100%;
+    padding: 12px;
+    position: fixed;
+    bottom:0;
+    margin-top:40px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+  
+  }
+  .p-footer1{
+    margin-bottom:0;
+    padding-bottom:0;
+    line-height: 7px;
+    font-size:20px;
+    color:rgb(26, 25, 25);
+  }
+  span{
+    margin-bottom:30px;
+    font-size:20px;
+    font-weight: bold;
+    color:rgb(26, 25, 25);
+  }
+  .p-footer2{
+    font-size:20px;
+    color:rgb(26, 25, 25);
+    padding-top: 0px;
+    margin:0 0 10px 0;
+  }
  @media(max-width:1440px){
     .imageDay{
         width:3%;
@@ -147,7 +199,7 @@ textarea:focus, input:focus{
         background-image: no-repeat center center fixed;
         width: auto ;
         max-width: 100% ;
-        height: auto ;
+        height: auto;
     }
     header{
         margin-bottom:1px;
@@ -183,10 +235,10 @@ textarea:focus, input:focus{
         display: none;
     }
     .container2{
+        padding:5px;
         display:flex;
         flex-direction: row;
         justify-content: space-evenly;
-        padding:5px;
         width:100%;
         border: none;
         box-shadow:none;
@@ -219,6 +271,16 @@ textarea:focus, input:focus{
         padding:0;
         flex-direction :column;
         justify-content: space-between;
+    }
+    footer{
+        padding:10px;
+        font-size:5px;
+       }
+       span{
+           font-size:15px;
+       }
+    .p-footer1{
+        font-size:15px;
     }
 }
 @media(max-width:320px){
