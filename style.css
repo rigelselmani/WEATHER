@@ -247,6 +247,7 @@ footer{
         width:90%;
         border: none;
         box-shadow:none;
+        margin-bottom:50px;
     }
     .weekDays{
         padding:0px;
