@@ -28,6 +28,7 @@ input {
     letter-spacing: 1px;
     text-align: center;
     border: none;
+    padding: 0 2rem;
     border-radius: 15px;
     color: white;
     height: 2.5rem;
