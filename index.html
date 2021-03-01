@@ -1,39 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@100;400&display=swap" rel="stylesheet">    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>weather App</title>
 </head>
+
 <body>
 
-<header>
-    <input type="text" placeholder="Search by City">
-    <h1 class="firstH1"><i class='far fa-calendar-alt'></i>  <span id="date"> </span></h1>
-</header> 
-<div class="container1">
-        <h1 class="city">city</h1>
-        <h1 class="temp">temp</h1>
-        <img class="firstImg" src="" alt="">
-        <p class="tempType"><span class="f"> °F  </span>  / <span class="c" > °C </span></p>
-    <div class="hum-wind">
-        <p class="humidity">humidity</p>
-        <p class="wind">wind</p>
+    <header>
+        <input type="text" placeholder="Search by City">
+        <h1 class="firstH1"><i class='far fa-calendar-alt'></i> <span id="date"> </span></h1>
+    </header>
+    <div class="container">
+        <div class="f-section">
+            <div class="name">
+                <h1 class="city">city</h1>
+                <p class="tempType"><span class="f"> °F  </span> / <span class="c"> °C </span></p>
+            </div>
+            <div class="hum-wind">
+                <p class="humidity">humidity</p>
+                <hr>
+                <p class="wind">wind</p>
+            </div>
+            <div class="temp-img">
+                <h1 class="temp">temp</h1>
+                <img class="firstImg" src="" alt="">
+            </div>
+        </div>
+        <div class="s-section">
+            <div class="weekDays">
+            </div>
+            <div class="imageDays">
+            </div>
+            <div class="weekly-temp">
+                <div class="maxTemp">
+                </div>
+                <div class="minTemp">
+                </div>
+            </div>
+        </div>
     </div>
-</div>
-<div class="container2">
-    <div class="weekDays">
-    </div>
-    <div class="imageDays">
-    </div>
-    <div class="minTemp">
-    </div>
-    <div class="maxTemp">
-    </div>
-</div>
-<script src="weather.js"></script>
+    <footer>
+        <p class="p-footer1"><span>Rigel Selmani</span> • Software Developer • <span>2021</span></p>
+        <p class="p-footer2">rigelrigelselmani@hotmail.com</p>
+    </footer>
+    <script src="weather.js"></script>
 </body>
+
 </html>

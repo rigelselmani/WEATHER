@@ -1,303 +1,320 @@
-body{
-    padding:0;
-    margin:0;
-    background: no-repeat center fixed; 
-    background-size: cover;
-    background: #1D2671;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #C33764, #1D2671);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #C33764, #1D2671); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+body {
+    padding: 0;
+    margin: 0;
+    background: #1D2671;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #C33764, #1D2671);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #C33764, #1D2671);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100%;
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-attachment: fixed;
-    background-position: center; 
-    font-family: 'Montserrat', sans-serif; 
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
 }
-header{
-    background-color: #5a5574;
-    color:white;
-    font-size: 10px;
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #5a5574;
+    color: white;
+    font-size: .7rem;
 }
-.firstH1{
-   display: inline-block;
-   position: relative;
-   left:43%;
-}
-input{
-    left:21%;
-    display: inline-block;
-    position: relative;
-    border:none;
+
+input {
     background-color: rgba(238, 232, 232, 0.712);
-    padding:5px;
     letter-spacing: 1px;
     text-align: center;
+    border: none;
     border-radius: 15px;
-    color:white;
+    color: white;
+    height: 2.5rem;
 }
-textarea:focus, input:focus{
+
+textarea:focus,
+input:focus {
     outline: none;
+    border: none;
 }
-::placeholder{
-    color:white; 
+
+::placeholder {
+    color: white;
 }
-.container1{
-    position: relative;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    width:60%;
+
+.container {
+    margin-top: 5rem;
+}
+
+.f-section {
+    width: 65%;
     margin: auto;
-    color:white;
+    color: white;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
-    border-bottom:2px solid white;
-    height:270px;
+    border-bottom: 2px solid white;
+    height: 270px;
     margin-top: 40px;
-    box-shadow: 12px 12px 12px 12px rgba(53, 52, 52, 0.1);
+    box-shadow: 14px 14px 14px 14px rgba(53, 52, 52, 0.1);
 }
-.temp{
-    position: absolute;
-    left:5%;
-    top:4%;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 70px;
+
+.f-section {
+    display: flex;
+    justify-content: space-evenly;
 }
-.city{
-    position: absolute;
-    left:64%;
-    top:19%;
-    font-family: 'Montserrat', sans-serif;  
-    border-bottom:3px solid white;
+
+.firstImg {
+    width: 3rem;
 }
-.firstImg{
-    position: absolute;
-    width:50px;
-    height:50px;
-    left:7%;
-    top:50%;
+
+.hum-wind {
+    display: flex;
+    align-self: center;
+    height: 3.8rem;
+    margin-top: 3rem;
+    font-size: 1.3rem;
 }
-.tempType{   
-    position: absolute;
-    font-size: 26px;
-    left:460px;
-    bottom:30%;
-    cursor: default;
-}
-.f:hover{
+
+.c:hover {
     background-color: grey;
     border-radius: 10px;
-    border:3px solid grey;
+    border: 3px solid grey;
 }
-.c:hover{
+
+.f:hover {
     background-color: grey;
     border-radius: 10px;
-    border:3px solid grey;
+    border: 3px solid grey;
 }
-.hum-wind{
-    position: relative;
-    top:67%;
-    left:12%;
+
+hr {
+    margin: 1rem;
 }
-.humidity{
-    display: inline-block;
-    font-family: 'Montserrat', sans-serif;  
-    font-size: 26px;
-    padding-right:20px;
-    border-right:1px solid white ;
-}
-.wind{
-    padding-left:20px;
-    display: inline-block;
-    font-family: 'Montserrat', sans-serif;  
-    font-size: 26px;
-}
-.container2{
-    position: relative;
-    width:60%;
-    height:250px;
-    margin:auto;
-    margin-bottom:40px;
-    color:white;
-    font-size:27px;
+
+.s-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: auto;
+    width: 65%;
+    height: 400px;
+    color: white;
+    font-size: 1.4rem;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    box-shadow: 9px 9px 9px 9px rgb(0,0,0, 0.1);
+    box-shadow: 9px 9px 9px 9px rgb(0, 0, 0, 0.1);
 }
-.weekDays{
+
+.weekDays {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+h5 {
+    margin: 0;
+    font-size: 1.4rem;
+}
+
+.imageDays {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.imageDay {
+    width: 2.6rem;
+    color: rgb(255, 238, 0);
+}
+
+.weekly-temp {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4rem;
+}
+
+.minTemp {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+
+.maxTemp {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 1.4rem;
+}
+
+.weeklyMinTemp {
+    margin: 0;
+}
+
+.weeklyMaxTemp {
+    margin: 0;
+}
+
+footer {
+    background-color: rgb(63, 81, 181);
+    color: rgb(185, 181, 181);
+    padding: 1.2rem;
+    margin-top: 1.6rem;
     text-align: center;
+    font-family: 'Roboto', sans-serif;
 }
-h5{
-    width: 8.5%;
-    padding:0 22px;
-    display: inline-block;
+
+.p-footer1 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    line-height: .7rem;
+    font-size: 1.2rem;
 }
-.imageDays{
-    text-align: center;
+
+span {
+    font-size: 1.3;
+    font-weight: 600;
 }
-.imageDay{
-    width: 8.5%;
-    height:35px;
-    padding: 0 22px;
+
+.p-footer2 {
+    font-size: 1rem;
+    margin-top: .2rem;
+    ;
 }
-p{
-    display: inline-block;
-    text-align: center;
-    margin-top:0;
-}
-.minTemp{
-    text-align: center;
-}
-.weeklyMinTemp{
-    width: 8.5%;
-    padding:0 22px;
-    text-align: center;
-}
-.maxTemp{
-    text-align: center;
-}
-.weeklyMaxTemp{
-    padding:0 22px;
-    width: 8.5%;
-    text-align: center;
-}
- @media(max-width:1124px){
-    .tempType{
-        left:373px;
+
+@media(max-width:1000px) {
+    .f-section {
+        width: 90%;
     }
-    h5{
-        width: 5.5%;
-        padding: 0 21px;
+    .s-section {
+        width: 90%;
     }
-    .weekDays{
-        text-align: center;
+}
+
+@media(max-width:700px) {
+    .container {
+        margin-top: 1.5rem;
+    }
+    header {
+        font-size: .5rem;
+        height: 50px;
+    }
+    .f-section {
+        height: 200px;
+    }
+    .hum-wind {
+        font-size: 1rem;
+        ;
+    }
+    .s-section {
+        height: 300px;
+    }
+    h5 {
+        margin: 0;
+        font-size: 1.1rem;
     }
     .imageDay {
-        width: 6.5%;
-        height: 35px;
-        padding: 0 19.5px;
+        width: 1.8rem;
+        color: rgb(255, 238, 0);
     }
-    .imageDays{
-        text-align: center;
+    .maxTemp {
+        font-size: 1.1rem;
     }
-    .weeklyMinTemp {
-        width: 12.7%;
-        padding: 0 1px;
-        display: inline-block;
-    }
-    .minTemp{
-        text-align: center;
-    }
-    .weeklyMaxTemp {
-        padding: 0 1px;
-        width: 12.7%;
-    }
-    .maxTemp{
-        text-align: center;
+    .minTemp {
+        font-size: 1.1rem;
+        margin-top: 1rem;
     }
 }
- @media(max-width:414px){
-  header{
-    position :relative;
-    height:60px;
-    width:100%;
-  }
-  .firstH1{
-    position: relative;
-    top:60px;
-    left:40px;
-  }
-  input{
-    position:absolute;
-    top:10px;
-    font-size: 20px;
-    left:55px;
-  }
- .container1{
-     margin:auto;
-     width:100%;
-     height:100%px;
-     text-align: center;
- }
- .temp{
-     position: static;
-     margin-top:-20px;
-     font-size: 60px;
-     text-align: center;
-     margin-bottom:5px;
- }
-  .city{
-      position: static;
-      border-bottom: none;
-      margin-top:70px;
-      text-align: center;
- }
- p.tempType{
-     position: static;
-     font-size: 19px;
-     margin-top:-50px;
-     text-align: center;
- }
- .firstImg{
-   display: none;
-  }
- .hum-wind{
-     display: none;
- }
- .humidity{
-     border:none;
-     display: none;
- }
- .container2{
-     width:100%;
-     position: relative;
-     height:100%;
-     font-size: 20px;
- }
- .weekDays{
-    width:40px;
-    position:absolute;
-    top: -20px;
- }
- h5{
-     position: relative;
-     display: block;
-     width:10px;
-     margin:25px 0 0 0;
- }
- .imageDays{
-    position:absolute;
-    top:15px;
-    width:30px;
-    left:13px;
- }
- .imageDay{
-    width: 35px;
-    height: 22px;
-    position: relative;
-    top: -5px;
-    padding: 0 0 16px 0;
-    left: 110px;
- }
- .weeklyMinTemp{
-    left:210px;
-    padding:0 1px;
-    display: block;
-    width:60px;
- }
- .minTemp{
-     position: absolute;
-     top:7px;
-     left:260px
- }
- .weeklyMaxTemp{
-    left:294px;
-    display: block;
-    width:59px;
-    padding:0 1px;
-    /* height:35px; */
- }
- .maxTemp{
-     position:absolute;
-     top:7px;
-     left:310px;
- }
+
+@media(max-width:500px) {
+    .humidity {
+        display: none;
+        border: none;
+    }
+    hr {
+        display: none;
+    }
+}
+
+@media(max-width:450px) {
+    .container {
+        margin-top: 0;
+    }
+    header {
+        position: relative;
+    }
+    input {
+        height: 1.5rem;
+        padding: .2rem 3rem;
+    }
+    .firstH1 {
+        display: none;
+    }
+    .f-section {
+        box-shadow: none;
+        width: 100%;
+        height: 300px;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+    }
+    .hum-wind {
+        display: none;
+    }
+    .city {
+        margin-top: 0;
+    }
+    .firstImg {
+        width: 2.4rem;
+    }
+    .wind {
+        display: none;
+    }
+    .temp {
+        margin-top: 0;
+    }
+    .tempType {
+        margin: 0;
+    }
+    .s-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        box-shadow: none;
+        width: 100%;
+    }
+    .weekDays {
+        display: flex;
+        flex-direction: column;
+    }
+    .imageDays {
+        display: flex;
+        flex-direction: column;
+    }
+    .weekly-temp {
+        display: flex;
+        flex-direction: row;
+    }
+    .maxTemp {
+        display: flex;
+        flex-direction: column;
+    }
+    .minTemp {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+        margin-left: 1rem;
+    }
+    footer {
+        margin-top: .2rem;
+    }
+}
+
+@media(max-width:400px) {
+    .p-footer1 {
+        font-size: .9rem;
+    }
 }
