@@ -144,12 +144,16 @@ function fiveDaysWeather(response) {
         var forecast = wDay[ts.getDay()]
         var sky = response.daily[i].weather[0].main;
         $(".weekDays").append("<h5>" + forecast + "</h5>");
-        if (sky === "Rain") {
+        if (sky === "Snow") {
+            $(".imageDays").append("<img class='imageDay' src='images/snow.svg'/>");
+        }else if (sky === "Rain") {
             $(".imageDays").append("<img class='imageDay' src='images/rainyDay.svg'/>");
         } else if (sky === "Clouds") {
             $(".imageDays").append("<img class='imageDay' src='images/cloudyDay.svg'/>");
         } else if (sky === "Clear") {
             $(".imageDays").append("<img class='imageDay' src='images/sunnyDay.svg'/>");
+        }else if (sky === "Mist") {
+            $(".imageDays").append("<img class='imageDay' src='images/foggy.svg'/>");
         }
         $(".minTemp").append("<p class='weeklyMinTemp'>" + Math.floor(response.daily[i].temp.min) + "°</p>")
         $(".maxTemp").append("<p class='weeklyMaxTemp'>" + Math.floor(response.daily[i].temp.max) + "°</p>")
